@@ -1,0 +1,38 @@
+.puntualityContainerGrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 12rem;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 0;
+    background-color: #d4f2ff;
+}
+.containFlexIconDescription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    /* background-color: aqua; */
+}
+.containIconPuntuality{
+    width: 5rem;
+    height: 4rem;
+}
+.iconInternPuntuality{
+    width: 100%;
+    height: 100%;
+    color: #06364b;
+}
+.descriptionIconDown{
+    font-size: 2rem;
+    text-align: center;
+    color: #06364b;
+    padding-top: 1rem;
+
+}

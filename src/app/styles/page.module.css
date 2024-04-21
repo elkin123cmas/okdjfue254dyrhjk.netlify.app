@@ -1,0 +1,495 @@
+.main {
+  width: 100%;
+  height: 100%;
+}
+
+/* ***********HEADER********** */
+.containHeader {
+  width: 100%;
+  height: 7rem;
+  background: radial-gradient(
+    circle,
+    rgba(7, 80, 161, 1) 1%,
+    rgba(6, 44, 85, 1) 100%,
+    rgba(7, 80, 161, 1) 100%
+  );
+}
+.containInternHeaderFlex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* background-color: #13aaff; */
+}
+.containLogo {
+  width: 8rem;
+  height: auto;
+  margin: auto;
+  /* background-color: green; */
+}
+.logoIntern {
+  font-size: 3rem;
+  text-align: center;
+  color: #d4f2ff;
+}
+.logoIntern:hover {
+  cursor: pointer;
+}
+.containMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* background-color: tomato; */
+}
+.listIntern {
+  list-style: none;
+  font-size: 1.8rem;
+  margin-right: 6rem;
+  color: #d4f2ff;
+  transition: all ease 0.4s;
+}
+.listIntern:last-child {
+  margin-right: 0;
+}
+.listIntern:hover {
+  cursor: pointer;
+  color: #7de0ff;
+}
+.btnContactIntern {
+  display: block;
+  border: none;
+  border-radius: 1rem;
+  width: auto;
+  height: 3rem;
+  margin: auto;
+  padding: 0 1rem;
+  font-size: 1.8rem;
+  transition: all ease-out 0.3s;
+  color: #d4f2ff;
+  background-color: #0089ff;
+}
+.btnContactIntern:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: #7de0ff;
+  background-color: #005cce;
+}
+
+/* ***********FINISH-HEADER********** */
+
+/* ********MENU RESPONSIVE HAMBURG******* */
+.containIconHamburg {
+  display: none;
+}
+/* *********OUR ENTERPRISES******** */
+.containOurEnterprisesFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 4rem;
+  width: 98%;
+  height: 45rem;
+  /* background-color: rgb(83, 83, 12); */
+}
+.containImgEnterprises {
+  width: 40%;
+  height: 100%;
+  /* background-color: tomato; */
+}
+.imgEnterprises {
+  width: 100%;
+  height: 100%;
+}
+.containTextOur5Enterprises {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 100%;
+  color: #edfbff;
+
+  /* background-color: rgb(114, 17, 114); */
+}
+.textTitle {
+  font-size: 4rem;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+}
+.textInterEnterprises {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+/* **********SERVICES GRID********** */
+.containTitlePrincipal {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-bottom: 6rem;
+  /* background-color: yellowgreen; */
+}
+.titlePrincipal {
+  font-size: 4rem;
+  color: #cff2fe;
+}
+.subtitlePrincipal {
+  font-size: 2.5rem;
+  color: #cff2fe;
+}
+.containServices {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 3rem;
+  width: 98%;
+  height: 100%;
+  /* background-color: #13aaff; */
+}
+.servicesIntern {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: auto;
+  width: 30rem;
+  height: 50rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0px 0px 8px 1px rgba(34, 176, 238, 1);
+  -moz-box-shadow: 0px 0px 8px 1px rgba(34, 176, 238, 1);
+  box-shadow: 0px 0px 8px 1px rgba(34, 176, 238, 1);
+
+  /* efect rigth scroll */
+  opacity: 0;
+  transform: translateX(-8rem);
+  transition: opacity 0.5s ease, transform 1s ease;
+  /* background-color: tomato; */
+}
+.servicesIntern.visible {
+  /* efect rigth scroll */
+
+  opacity: 1;
+  transform: translateX(0);
+}
+.servicesIntern:hover {
+  transform: rotateZ(5deg);
+  -webkit-box-shadow: 0px 0px 39px -5px rgba(6, 147, 212, 1);
+  -moz-box-shadow: 0px 0px 39px -5px rgba(6, 147, 212, 1);
+  box-shadow: 0px 0px 39px -5px rgba(6, 147, 212, 1);
+}
+.containImgServices {
+  width: 100%;
+  height: 18rem;
+}
+.imgServicesInter {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.titleIntern {
+  width: 100%;
+  height: 2rem;
+  margin-top: 1rem;
+}
+.title {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: #0874b2;
+}
+.containDescriptionServices {
+  width: 100%;
+  padding: 1rem;
+}
+.description {
+  font-size: 1.5rem;
+  text-align: start;
+  color: #a5e4fc;
+}
+.containBtnVewServices {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20rem;
+  height: 5rem;
+  padding: 0.5rem 1rem;
+  /* background-color: brown; */
+}
+.btnServices {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1.5rem;
+  color: #0a3061;
+  transition: all ease 0.4s;
+  background-color: #d4f2ff;
+}
+.btnServices:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  /* color: #cff2fe; */
+  font-weight: bold;
+  background-color: #d4f2ff;
+}
+/* ********RESERVS-MOTOR******** */
+.containReservSectionFlex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: auto;
+  margin-top: 20rem;
+  width: 80%;
+  height: 100%;
+  /* background-color: yellowgreen; */
+}
+.containReservsMotor {
+  width: 80%;
+  height: 100%;
+  /* background-color: violet; */
+}
+.titleText {
+  font-size: 4rem;
+  font-weight: 400;
+  color: #d4f2ff;
+}
+.spanTtileInternMotor {
+  font-size: 4.5rem;
+  font-weight: 900;
+}
+
+.textSpanEnterprises {
+  color: #14abff;
+  font-weight: 900;
+}
+.testDescriptionReservs {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  color: #afb0b0;
+}
+.containImgReservs {
+  width: 80%;
+  height: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.imgReservs {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+}
+.containBtnContact{
+ 
+  width: 30rem;
+  height: 5rem;
+  padding: 0.5rem 1rem;
+  margin: auto;
+  margin-top: 4rem;
+  /* background-color: brown; */
+}
+
+.btnContact{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 1.5rem;
+  font-size: 1.8rem;
+  color: #effbff;
+  font-weight: bold;
+  transition: all ease 0.4s;
+  background-color: #14abff;
+}
+.btnContact:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: #06364b;
+  font-weight: bold;
+  background-color: #b2eaff;
+}
+/* **********OFFER ENTERPRISES******** */
+.titleOfferContain{
+  width: auto;
+  height: auto;
+  margin-top: 11rem;
+  /* background-color: blueviolet; */
+}
+.titleOffer{
+  font-size: 4rem;
+  color: #edfbff;
+  text-align: center;
+}
+.titleOffer span{
+  color: #14abff;
+
+}
+@media screen and (max-width: 480px) {
+  .containIconHamburg {
+    display: block;
+    width: 2.5rem;
+    height: 2rem;
+  }
+  .containIconHamburg:hover {
+    cursor: pointer;
+    color: #13aaff;
+  }
+  .iconHamburg {
+    width: 100%;
+    height: 100%;
+    color: #0089ff;
+  }
+  .containHeader {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+  }
+  .containInternHeaderFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .ensayo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .containLogo {
+    width: 5rem;
+    height: auto;
+    margin: 0;
+  }
+
+  .logoIntern {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .containAddMenuinternNone {
+    display: block;
+    transition: height ease-in-out 0.5s;
+    overflow: hidden;
+  }
+  .containMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 0;
+    transition: height ease-in-out 0.5s;
+    /* background-color: tomato; */
+  }
+  .listIntern {
+    font-size: 1.2rem;
+    margin-right: 0;
+    margin: 1.2rem 0;
+  }
+  .listIntern:hover {
+    cursor: pointer;
+    color: #7de0ff;
+  }
+  .btnContactIntern {
+    display: none;
+  }
+
+  /* *********OUR ENTERPRISES******** */
+  .containOurEnterprisesFlex {
+    flex-direction: column;
+    height: fit-content;
+    /* background-color: rgb(83, 83, 12); */
+  }
+  .containImgEnterprises {
+    width: 100%;
+    height: 18rem;
+    /* background-color: tomato; */
+  }
+
+  .containTextOur5Enterprises {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    /* background-color: rgb(114, 17, 114); */
+  }
+  .textTitle {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .textInterEnterprises {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+
+  /* **********SERVICES GRID********** */
+  .containTitlePrincipal {
+    margin: 6rem 0;
+    /* background-color: yellowgreen; */
+  }
+  .titlePrincipal {
+    font-size: 2rem;
+  }
+  .subtitlePrincipal {
+    font-size: 1.5rem;
+  }
+  .containServices {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 0;
+    /* background-color: #13aaff; */
+  }
+  .servicesIntern {
+    margin: auto;
+    width: 75%;
+    /* background-color: tomato; */
+  }
+  .containImgServices {
+    width: 100%;
+    height: 18rem;
+  }
+  .imgServicesInter {
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  .titleIntern {
+    height: auto;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  .containDescriptionServices {
+    width: 100%;
+    padding: 1rem;
+  }
+  .description {
+    text-align: center;
+  }
+  .containBtnVewServices {
+    position: static;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    width: 20rem;
+    height: 5rem;
+    padding: 0.5rem 1rem;
+    /* background-color: brown; */
+  }
+}

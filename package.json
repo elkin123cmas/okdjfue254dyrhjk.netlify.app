@@ -9,16 +9,29 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@types/react-slick": "^0.23.13",
+    "@types/slick-carousel": "^1.6.40",
+    "google-fonts-loader": "^1.0.2",
+    "install": "^0.13.0",
+    "next": "14.1.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.1"
+    "react-lottie-player": "^2.0.0",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
-    "typescript": "^5",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.1.1"
-  }
+    "eslint-config-next": "14.1.1",
+    "typescript": "^5"
+  },
+  "main": "index.js",
+  "author": "elkin123cmas <serviciotecnicoinfacont@gmail.com>",
+  "license": "MIT"
 }

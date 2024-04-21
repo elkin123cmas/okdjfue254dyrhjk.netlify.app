@@ -1,0 +1,91 @@
+.containSlider {
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  margin-top: 5rem;
+  /* background-color: aqua; */
+}
+.containImgSlider {
+  width: 100%;
+  height: 70rem;
+  /* overflow: hidden;  */
+  position: relative;
+}
+.imgInternSlider {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: .6;
+  object-fit: contain;
+}
+.containTextImgSlider {
+  position: absolute;
+  width: 70%;
+  height: auto;
+  left: 0;
+  bottom: 20%;
+  margin-left: 3rem;
+  /* background-color: aqua; */
+}
+.textInternImgSlider {
+  font-family: "M PLUS 1 Code", monospace;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #edfbff;
+}
+.textInternImgSlider1 {
+  font-family: "M PLUS 1 Code", monospace;
+  font-size: 3rem;
+  line-height: 1.5;
+  color: #0e365d;
+}
+.textInternImgSlider1 span {
+  font-size: 7rem;
+}
+.textInternImgSlider span {
+  font-size: 7rem;
+}
+
+/* ********responsive 480px******* */
+
+@media screen and (max-width: 480px) {
+  .containSlider {
+    width: 100%;
+    margin-top: 3rem;
+
+    /* background-color: aqua; */
+  }
+  .containImgSlider {
+    height: auto;
+    /* background-color: brown; */
+  }
+  .imgInternSlider {
+    height: 100%;
+    
+  }
+  .containTextImgSlider {
+    width: 100%;
+    bottom: 15%;
+    margin: auto;
+    margin-left: 0;
+    /* background-color: aqua; */
+  }
+ 
+  .textInternImgSlider {
+    line-height: 1.4;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .textInternImgSlider1 {
+    line-height: 1.2;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #0d599b;
+  }
+  .textInternImgSlider1 span {
+    font-size: 2rem;
+  }
+  .textInternImgSlider span {
+    font-size: 2rem;
+  }
+}
