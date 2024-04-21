@@ -15,7 +15,7 @@
   display: block;
   width: 100%;
   height: auto;
-  opacity: .6;
+  opacity: 0.6;
   object-fit: contain;
 }
 .containTextImgSlider {
@@ -52,7 +52,7 @@
   .containSlider {
     width: 98%;
     margin-top: 3rem;
-overflow: hidden;
+    overflow: hidden;
     /* background-color: aqua; */
   }
   .containImgSlider {
@@ -61,7 +61,6 @@ overflow: hidden;
   }
   .imgInternSlider {
     height: 100%;
-    
   }
   .containTextImgSlider {
     width: 100%;
@@ -70,22 +69,20 @@ overflow: hidden;
     margin-left: 0;
     /* background-color: aqua; */
   }
- 
+
   .textInternImgSlider {
-    line-height: 1.4;
-    font-size: 1.5rem;
-    text-align: center;
+    line-height: 1.2;
+    font-size: 1.2rem;
   }
   .textInternImgSlider1 {
     line-height: 1.2;
-    font-size: 1.5rem;
-    text-align: center;
-    color: #0d599b;
+    font-size: 1.2rem;
+    color: #edfbff;
   }
   .textInternImgSlider1 span {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .textInternImgSlider span {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
