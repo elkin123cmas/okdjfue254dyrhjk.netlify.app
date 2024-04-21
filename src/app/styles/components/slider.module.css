@@ -7,7 +7,7 @@
 }
 .containImgSlider {
   width: 100%;
-  height: 70rem;
+  height: 52rem;
   /* overflow: hidden;  */
   position: relative;
 }
@@ -40,19 +40,19 @@
   color: #0e365d;
 }
 .textInternImgSlider1 span {
-  font-size: 7rem;
+  font-size: 5rem;
 }
 .textInternImgSlider span {
-  font-size: 7rem;
+  font-size: 5rem;
 }
 
 /* ********responsive 480px******* */
 
 @media screen and (max-width: 480px) {
   .containSlider {
-    width: 100%;
+    width: 98%;
     margin-top: 3rem;
-
+overflow: hidden;
     /* background-color: aqua; */
   }
   .containImgSlider {

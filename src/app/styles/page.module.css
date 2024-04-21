@@ -6,7 +6,7 @@
 /* ***********HEADER********** */
 .containHeader {
   width: 100%;
-  height: 7rem;
+  height: 5rem;
   background: radial-gradient(
     circle,
     rgba(7, 80, 161, 1) 1%,
@@ -24,13 +24,12 @@
   /* background-color: #13aaff; */
 }
 .containLogo {
-  width: 8rem;
+  width: 7rem;
   height: auto;
   margin: auto;
   /* background-color: green; */
 }
 .logoIntern {
-  font-size: 3rem;
   text-align: center;
   color: #d4f2ff;
 }
@@ -46,7 +45,7 @@
 }
 .listIntern {
   list-style: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-right: 6rem;
   color: #d4f2ff;
   transition: all ease 0.4s;
@@ -63,17 +62,17 @@
   border: none;
   border-radius: 1rem;
   width: auto;
-  height: 3rem;
+  height: auto;
   margin: auto;
-  padding: 0 1rem;
-  font-size: 1.8rem;
+  padding: 0.3rem 1rem;
+  font-size: 1.5rem;
   transition: all ease-out 0.3s;
   color: #d4f2ff;
   background-color: #0089ff;
 }
 .btnContactIntern:hover {
   cursor: pointer;
-  transform: scale(1.2);
+  transform: scale(1.1);
   color: #7de0ff;
   background-color: #005cce;
 }
@@ -117,14 +116,14 @@
   /* background-color: rgb(114, 17, 114); */
 }
 .textTitle {
-  font-size: 4rem;
+  font-size: 3rem;
   font-family: "Roboto", sans-serif;
   margin-bottom: 1rem;
 }
 .textInterEnterprises {
   text-align: center;
   font-family: "Roboto", sans-serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   line-height: 1.5;
 }
 
@@ -137,11 +136,11 @@
   /* background-color: yellowgreen; */
 }
 .titlePrincipal {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #cff2fe;
 }
 .subtitlePrincipal {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #cff2fe;
 }
 .containServices {
@@ -264,12 +263,12 @@
   /* background-color: violet; */
 }
 .titleText {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 400;
   color: #d4f2ff;
 }
 .spanTtileInternMotor {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: 900;
 }
 
@@ -279,7 +278,7 @@
 }
 .testDescriptionReservs {
   margin-top: 2rem;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   color: #afb0b0;
 }
 .containImgReservs {
@@ -294,9 +293,8 @@
   object-fit: cover;
   border-radius: inherit;
 }
-.containBtnContact{
- 
-  width: 30rem;
+.containBtnContact {
+  width: 25rem;
   height: 5rem;
   padding: 0.5rem 1rem;
   margin: auto;
@@ -304,13 +302,13 @@
   /* background-color: brown; */
 }
 
-.btnContact{
+.btnContact {
   display: block;
   width: 100%;
   height: 100%;
   border: none;
   border-radius: 1.5rem;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   color: #effbff;
   font-weight: bold;
   transition: all ease 0.4s;
@@ -324,20 +322,19 @@
   background-color: #b2eaff;
 }
 /* **********OFFER ENTERPRISES******** */
-.titleOfferContain{
+.titleOfferContain {
   width: auto;
   height: auto;
   margin-top: 11rem;
   /* background-color: blueviolet; */
 }
-.titleOffer{
-  font-size: 4rem;
+.titleOffer {
+  font-size: 3rem;
   color: #edfbff;
   text-align: center;
 }
-.titleOffer span{
+.titleOffer span {
   color: #14abff;
-
 }
 @media screen and (max-width: 480px) {
   .containIconHamburg {
@@ -446,17 +443,20 @@
     font-size: 2rem;
   }
   .subtitlePrincipal {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
   .containServices {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin-top: 0;
+    gap: 2rem;
+
     /* background-color: #13aaff; */
   }
   .servicesIntern {
     margin: auto;
     width: 75%;
+    gap: 1rem;
     /* background-color: tomato; */
   }
   .containImgServices {
@@ -491,5 +491,36 @@
     height: 5rem;
     padding: 0.5rem 1rem;
     /* background-color: brown; */
+  }
+  /* ********RESERVS-MOTOR******** */
+  .containReservSectionFlex {
+    flex-direction: column;
+    margin-top: 8rem;
+    width: 98%;
+    /* background-color: yellowgreen; */
+  }
+  .containReservsMotor {
+    text-align: center;
+    /* background-color: violet; */
+  }
+  .titleText {
+    font-size: 2rem;
+  }
+  .spanTtileInternMotor {
+    font-size: 3rem;
+  }
+  .testDescriptionReservs {
+    font-size: 1.6rem;
+  }
+  .containImgReservs {
+    width: 95%;
+  }
+  /* **********OFFER ENTERPRISES******** */
+  .titleOfferContain {
+    margin-top: 10rem;
+    /* background-color: blueviolet; */
+  }
+  .titleOffer {
+    font-size: 2.7rem;
   }
 }

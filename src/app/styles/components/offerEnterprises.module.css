@@ -1,50 +1,80 @@
 .containerOfferGrids {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 1rem;
+  /* background-color: coral; */
+}
+
+.containInternOffer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: 75%;
+  height: 50rem;
+  padding: 2rem;
+  /* border: 1px solid #ccc; */
+  border-radius: 2rem;
+  /* background-color: #def0ff; */
+}
+.containImgOffer {
+  width: 11rem;
+  height: 9rem;
+  /* background-color: rgb(43, 71, 71); */
+}
+.iconHamburg {
+  width: 100%;
+  height: 100%;
+  color: #def0ff;
+}
+.imgOffer {
+  width: 100%;
+  height: auto;
+}
+.titleOffer {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 3rem;
+  color: #007ed4;
+}
+.descriptionOffer {
+  font-size: 1.6rem;
+  margin-top: 2rem;
+  color: #afb0b0;
+}
+@media screen and (max-width: 480px) {
+  .containerOfferGrids {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center; 
-    margin-top: 8rem;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 7rem;
     gap: 1rem;
-    /* background-color: coral; */
+    /* background-color: rgb(160, 74, 43); */
   }
-  
+
   .containInternOffer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: auto;
-    width: 75%;
-    height: 70rem;
-    padding: 2rem;
-    /* border: 1px solid #ccc; */
-    border-radius: 2rem;
-    /* background-color: #def0ff; */
+    width: 100%;
+    height: fit-content;
+    /* background-color: #113f64; */
   }
-  .containImgOffer{
-    width: 15rem;
-    height: 12rem;
+  .containImgOffer {
+    width: 10rem;
+    height: 8rem;
     /* background-color: rgb(43, 71, 71); */
   }
-  .iconHamburg{
-    width: 100%;
-    height: 100%;
-    color: #def0ff;
-  }
-  .imgOffer {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
+
   .titleOffer {
-    font-size: 3rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-top: 3rem;
     color: #007ed4;
   }
   .descriptionOffer {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     margin-top: 2rem;
     color: #afb0b0;
   }
-  
+}
