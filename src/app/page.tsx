@@ -6,7 +6,15 @@ import back from "../app/assets/imagenes/img-back.jpg";
 import enterprises from "../app/assets/imagenes/img-empresa.jpg";
 import styles from "./styles/page.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBurger } from "@fortawesome/free-solid-svg-icons";
+import {
+  faBurger,
+  faChartColumn,
+  faChartGantt,
+  faLockOpen,
+  faMapLocationDot,
+  faTicket,
+  faGears
+} from "@fortawesome/free-solid-svg-icons";
 import { FC, useEffect, useRef, useState } from "react";
 import Carrousele from "./components/carrousele";
 import DesignerLot from "./components/designerLottie";
@@ -15,6 +23,7 @@ import web from "../app/assets/imagenes/imgWeb (1).jpg";
 import crm from "../app/assets/imagenes/imgCrm (1).jpg";
 import change from "../app/assets/imagenes/imgChange (1).jpg";
 import reservs from "../app/assets/imagenes/imgReservs.jpg";
+import geolocalitaton from "../app/assets/imagenes/imgPhone.png";
 import SectionDescription from "./components/sectionDescription";
 import OfferEnterprises from "./components/offerEnterprises";
 
@@ -100,10 +109,10 @@ const Page: FC = () => {
             style={{ height: isVisible ? "20vh" : "0" }}
           >
             <div className={styles.containMenu}>
-              <li className={styles.listIntern}>Inicio</li>
-              <li className={styles.listIntern}>Trabajos</li>
+              <li className={styles.listIntern}>Empresas</li>
+              <li className={styles.listIntern}>Industrias</li>
+              <li className={styles.listIntern}>Precio</li>
               <li className={styles.listIntern}>Contacto</li>
-              <li className={styles.listIntern}>Latinoamerica</li>
             </div>
           </div>
 
@@ -195,14 +204,171 @@ const Page: FC = () => {
       </div>
       <div className={styles.titleOfferContain}>
         <h3 className={styles.titleOffer}>
-          Qué ofrece InDeveloper a las <span>empresas</span> 
+          Qué ofrece InDeveloper a las <span>empresas</span>
         </h3>
       </div>
       <div>
-        <OfferEnterprises/>
+        <OfferEnterprises />
+      </div>
+      {/* * **********FUNCTIONS ENTERPRISES******** *  */}
+      <div className={styles.titleFunctionContain}>
+        <h3 className={styles.titleFunction}>
+          Aspectos esenciales para la solución <span>empresarial</span>
+        </h3>
+      </div>
+      <div className={styles.containImgFunctionsTextFlex}>
+        <div className={styles.containImgGeo}>
+          <Image
+            className={styles.imgGeolocalization}
+            src={geolocalitaton}
+            alt="Geolocalización"
+          />
+        </div>
+        <div className={styles.descriptionRightFlex}>
+          <div className={styles.controlContainTextFlex}>
+            <div className={styles.containIconControl}>
+              <FontAwesomeIcon
+                className={styles.iconControl}
+                icon={faChartColumn}
+              />
+            </div>
+            <div className={styles.containDescriptionControl}>
+              <div className={styles.containTitleControl}>
+                <h3 className={styles.titleControl}>
+                  Panel de control central
+                </h3>
+              </div>
+              <p className={styles.descriptionControl}>
+                Supervise todas las sucursales desde un nivel ejecutivo,
+                mientras que los directores regionales/locales gestionan
+                sistemas específicos y visualizan KPIs relevantes. Controle su
+                negocio viendo el rendimiento de cada sucursal, proveedor
+                destacado y reseñas importantes. Acceda fácilmente a los
+                subsistemas para realizar ajustes de configuración según sea
+                necesario.
+              </p>
+            </div>
+          </div>
+          <div className={styles.controlContainTextFlex}>
+            <div className={styles.containIconControl}>
+              <FontAwesomeIcon
+                className={styles.iconControl}
+                icon={faChartGantt}
+              />
+            </div>
+            <div className={styles.containDescriptionControl}>
+              <div className={styles.containTitleControl}>
+                <h3 className={styles.titleControl}>
+                  Gestión simple por secciones
+                </h3>
+              </div>
+              <p className={styles.descriptionControl}>
+                Administre y pague de manera eficiente por todas las sucursales
+                o subsistemas de su empresa desde una sola interfaz
+                centralizada. Controle las suscripciones, SMS, reservas y
+                créditos para recibos desde el panel de control central. Cada
+                departamento puede tener requisitos únicos en funciones y
+                reservas, determinando la suscripción correspondiente. Añadir o
+                eliminar sucursales de la suscripción es simple y rápido.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* SECTION GRID 4 */}
+      <div className={styles.containGridFunctionDown}>
+        <div className={styles.containInternGridFunction}>
+          <div className={styles.containIconControl}>
+            <FontAwesomeIcon
+              className={styles.iconControl}
+              icon={faMapLocationDot}
+            />
+          </div>
+          <div className={styles.containDescriptionControl}>
+            <div className={styles.containTitleControl}>
+              <h3 className={styles.titleControl}>
+                Complemento geolocalizador
+              </h3>
+            </div>
+            <p className={styles.descriptionControl}>
+              Si cuenta con múltiples sucursales distribuidas en una ciudad,
+              país o en todo el mundo, nuestro servicio de geolocalización es
+              perfecto para usted. Integre un mapa interactivo con las
+              ubicaciones de sus sucursales en su página web para que sus
+              clientes puedan localizar la más cercana y reservar una cita con
+              facilidad.
+            </p>
+          </div>
+        </div>
+        <div className={styles.containInternGridFunction}>
+          <div className={styles.containIconControl}>
+            <FontAwesomeIcon
+              className={styles.iconControl}
+              icon={faLockOpen}
+            />
+          </div>
+          <div className={styles.containDescriptionControl}>
+            <div className={styles.containTitleControl}>
+              <h3 className={styles.titleControl}>
+                Niveles de acceso e inicio de sesión único (SSO)
+              </h3>
+            </div>
+            <p className={styles.descriptionControl}>
+              Si cuenta con múltiples sucursales en una ciudad, país o a nivel
+              global, nuestro servicio de geolocalización es perfecto para
+              usted. Incorpore un mapa interactivo con las ubicaciones de sus
+              sucursales en su sitio web para que los clientes encuentren
+              fácilmente la más cercana y puedan reservar citas directamente.
+            </p>
+          </div>
+        </div>
+        <div className={styles.containInternGridFunction}>
+          <div className={styles.containIconControl}>
+            <FontAwesomeIcon
+              className={styles.iconControl}
+              icon={faTicket}
+            />
+          </div>
+          <div className={styles.containDescriptionControl}>
+            <div className={styles.containTitleControl}>
+              <h3 className={styles.titleControl}>Solución para recibos</h3>
+            </div>
+            <p className={styles.descriptionControl}>
+              La función de recibos le permite enviar recibos automáticamente al
+              reservar una cita. Después de la reserva, el cliente recibe su
+              recibo por correo electrónico. Con nuestra aplicación de
+              administrador o interfaz web, puede escanear el recibo cuando el
+              cliente llegue. Utilice esta función para notificar a otros
+              sistemas sobre la llegada del cliente.
+            </p>
+          </div>
+        </div>
+        <div className={styles.containInternGridFunction}>
+          <div className={styles.containIconControl}>
+            <FontAwesomeIcon
+              className={styles.iconControl}
+              icon={faGears}
+            />
+          </div>
+          <div className={styles.containDescriptionControl}>
+            <div className={styles.containTitleControl}>
+              <h3 className={styles.titleControl}>Personalización</h3>
+            </div>
+            <p className={styles.descriptionControl}>
+              Contamos con más de 60 funciones personalizadas diseñadas para
+              optimizar su sistema de programación en línea según sus
+              necesidades. Ya sea que necesite que sus clientes proporcionen
+              información previa a la cita, acepten pagos al reservar o más,
+              ofrecemos una variedad de opciones. Consulte con nuestros gestores
+              de cuentas para descubrir qué funciones se adaptarán mejor a sus
+              requerimientos.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
 };
 // https://simplybook.me/es/software-de-reservas-empresariales
 export default Page;
+
