@@ -13,7 +13,8 @@ import {
   faLockOpen,
   faMapLocationDot,
   faTicket,
-  faGears
+  faGears,
+  faLocationDot
 } from "@fortawesome/free-solid-svg-icons";
 import { FC, useEffect, useRef, useState } from "react";
 import Carrousele from "./components/carrousele";
@@ -24,6 +25,7 @@ import crm from "../app/assets/imagenes/imgCrm (1).jpg";
 import change from "../app/assets/imagenes/imgChange (1).jpg";
 import reservs from "../app/assets/imagenes/imgReservs.jpg";
 import geolocalitaton from "../app/assets/imagenes/imgPhone.png";
+import imgMaps from "../app/assets/imagenes/imgMap.png";
 import SectionDescription from "./components/sectionDescription";
 import OfferEnterprises from "./components/offerEnterprises";
 
@@ -366,6 +368,20 @@ const Page: FC = () => {
           </div>
         </div>
       </div>
+      <div className={styles.containImgAndText}>
+      <div className={styles.containImgMap}>
+          <Image className={styles.imgMaps} src={imgMaps} alt="Imagen Global"/>
+        </div>
+        <div className={styles.textImgMpas}>
+          <h3 className={styles.textMapsTitle}>
+          <FontAwesomeIcon className={styles.iconMaps} icon={faLocationDot} /> Global
+          </h3>
+          <p className={styles.textLocation}>
+          Para empresas con presencia nacional e internacional, nuestra plataforma de programación ofrece la solución perfecta.
+          </p>
+        </div>
+      </div>
+        
     </div>
   );
 };
