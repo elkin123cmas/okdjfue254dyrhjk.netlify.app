@@ -83,16 +83,28 @@
 .containIconHamburg {
   display: none;
 }
-.containIconHamburg{
+.containIconHamburg {
   animation: rotar 2s alternate;
 }
-@keyframes rotar{
-  0% {transform: rotate(0deg);}
-  20% {transform: rotate(10deg);}
-  40% {transform: rotate(-15deg);}
-  60% {transform: rotate(15deg);}
-  80% {transform: rotate(-10deg);}
-  100% {transform: rotate(0deg);}
+@keyframes rotar {
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  40% {
+    transform: rotate(-15deg);
+  }
+  60% {
+    transform: rotate(15deg);
+  }
+  80% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
 /* *********OUR ENTERPRISES******** */
 .containOurEnterprisesFlex {
@@ -459,51 +471,86 @@
   gap: 1rem;
 }
 
-
 /* *******CONTAIN MAPS******* */
 
-.containImgAndText{
+.containImgAndText {
   position: relative;
   width: 100%;
   height: 100%;
-/* background-color: red; */
+  /* background-color: red; */
 }
-.containImgMap{
+.containImgMap {
   width: 100%;
   height: 40rem;
   margin: auto;
   margin-top: 4rem;
-  opacity: .6;
+  opacity: 0.6;
   clip-path: circle(70% at 50% top);
-  background: rgb(207,242,254);
-  background: radial-gradient(circle, rgba(207,242,254,1) 0%, rgba(8,41,68,0.4766281512605042) 100%);
+  background: rgb(207, 242, 254);
+  background: radial-gradient(
+    circle,
+    rgba(207, 242, 254, 1) 0%,
+    rgba(8, 41, 68, 0.4766281512605042) 100%
+  );
 }
-.imgMaps{
+.imgMaps {
   width: 100%;
   height: 100%;
 }
 
-.textImgMpas{
+.textImgMpas {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width:35rem;
+  width: 35rem;
   height: auto;
   margin: auto;
   color: #edfbff;
 
   /* background-color: rgb(50, 91, 205); */
 }
-.iconMaps{
+.iconMaps {
   font-size: 3.5rem;
 }
-.textMapsTitle{
+.textMapsTitle {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
-.textLocation{
+.textLocation {
   font-size: 2rem;
+}
+
+/* **************FINISH CONTACT*************** */
+
+.containFinishContac {
+  width: 45%;
+  height: 100%;
+  margin: auto;
+  margin-top: 5rem;
+  /* background-color: yellowgreen; */
+}
+.titleFinishContact {
+  font-size: 3rem;
+  color: #edfbff;
+
+  line-height: 1;
+  text-align: center;
+}
+.textBlueInternFinish {
+  color: #14abff;
+}
+.textBlueIntern2 {
+  font-size: 2rem;
+}
+.descriptionFinishContac {
+  font-size: 1.6rem;
+  color: #afb0b0;
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  text-align: center;
+  /* background-color: yellowgreen; */
 }
 @media screen and (max-width: 480px) {
   .containIconHamburg {
@@ -738,20 +785,34 @@
 
   /* *******CONTAIN MAPS******* */
 
-.containImgAndText{
-  text-align: center;
+  .containImgAndText {
+    text-align: center;
+  }
+  .textImgMpas {
+    top: 35%;
+  }
+  .iconMaps {
+    font-size: 2.5rem;
+  }
+  .textMapsTitle {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .textLocation {
+    font-size: 1.6rem;
+  }
+
+  /* **************FINISH CONTACT*************** */
+
+.containFinishContac {
+  width: 100%;
+  margin-top: 0;
 }
-.textImgMpas{
-  top: 35%;
-}
-.iconMaps{
+.titleFinishContact {
   font-size: 2.5rem;
 }
-.textMapsTitle{
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+.textBlueIntern2 {
+  font-size: 2rem;
 }
-.textLocation{
-  font-size: 1.6rem;
-}
+
 }

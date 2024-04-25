@@ -14,7 +14,7 @@ import {
   faMapLocationDot,
   faTicket,
   faGears,
-  faLocationDot
+  faLocationDot,
 } from "@fortawesome/free-solid-svg-icons";
 import { FC, useEffect, useRef, useState } from "react";
 import Carrousele from "./components/carrousele";
@@ -122,9 +122,7 @@ const Page: FC = () => {
         </div>
       </div>
       {/* ********SLIDER******* */}
-      <div>
-        <Carrousele />
-      </div>
+      <Carrousele />
       <div className={styles.containOurEnterprisesFlex}>
         <div className={styles.containImgEnterprises}>
           <DesignerLot />
@@ -201,17 +199,14 @@ const Page: FC = () => {
           <Image className={styles.imgReservs} src={reservs} alt="Software" />
         </div>
       </div>
-      <div>
-        <SectionDescription />
-      </div>
+      <SectionDescription />
+
       <div className={styles.titleOfferContain}>
         <h3 className={styles.titleOffer}>
           Qué ofrece InDeveloper a las <span>empresas</span>
         </h3>
       </div>
-      <div>
-        <OfferEnterprises />
-      </div>
+      <OfferEnterprises />
       {/* * **********FUNCTIONS ENTERPRISES******** *  */}
       <div className={styles.titleFunctionContain}>
         <h3 className={styles.titleFunction}>
@@ -304,10 +299,7 @@ const Page: FC = () => {
         </div>
         <div className={styles.containInternGridFunction}>
           <div className={styles.containIconControl}>
-            <FontAwesomeIcon
-              className={styles.iconControl}
-              icon={faLockOpen}
-            />
+            <FontAwesomeIcon className={styles.iconControl} icon={faLockOpen} />
           </div>
           <div className={styles.containDescriptionControl}>
             <div className={styles.containTitleControl}>
@@ -326,10 +318,7 @@ const Page: FC = () => {
         </div>
         <div className={styles.containInternGridFunction}>
           <div className={styles.containIconControl}>
-            <FontAwesomeIcon
-              className={styles.iconControl}
-              icon={faTicket}
-            />
+            <FontAwesomeIcon className={styles.iconControl} icon={faTicket} />
           </div>
           <div className={styles.containDescriptionControl}>
             <div className={styles.containTitleControl}>
@@ -347,10 +336,7 @@ const Page: FC = () => {
         </div>
         <div className={styles.containInternGridFunction}>
           <div className={styles.containIconControl}>
-            <FontAwesomeIcon
-              className={styles.iconControl}
-              icon={faGears}
-            />
+            <FontAwesomeIcon className={styles.iconControl} icon={faGears} />
           </div>
           <div className={styles.containDescriptionControl}>
             <div className={styles.containTitleControl}>
@@ -369,22 +355,39 @@ const Page: FC = () => {
         </div>
       </div>
       <div className={styles.containImgAndText}>
-      <div className={styles.containImgMap}>
-          <Image className={styles.imgMaps} src={imgMaps} alt="Imagen Global"/>
+        <div className={styles.containImgMap}>
+          <Image className={styles.imgMaps} src={imgMaps} alt="Imagen Global" />
         </div>
         <div className={styles.textImgMpas}>
           <h3 className={styles.textMapsTitle}>
-          <FontAwesomeIcon className={styles.iconMaps} icon={faLocationDot} /> Global
+            <FontAwesomeIcon className={styles.iconMaps} icon={faLocationDot} />{" "}
+            Global
           </h3>
           <p className={styles.textLocation}>
-          Para empresas con presencia nacional e internacional, nuestra plataforma de programación ofrece la solución perfecta.
+            Para empresas con presencia nacional e internacional, nuestra
+            plataforma de programación ofrece la solución perfecta.
           </p>
         </div>
       </div>
-        
+      <div className={styles.containFinishContac}>
+        <h3 className={styles.titleFinishContact}>
+          ¡<span className={styles.textBlueInternFinish}>Incrementa </span> la
+          tasa <br />{" "}
+          <span className={styles.textBlueIntern2}>
+            {" "}
+            de conversión al facilitar la reserva de citas para tus clientes!
+          </span>
+        </h3>
+        <p className={styles.descriptionFinishContac}>
+          Contacta a nuestros expertos y descubre cómo InDeveloper puede
+          optimizar la eficiencia de tu sitio web empresarial.
+        </p>
+        <div className={styles.containBtnContact}>
+          <button className={styles.btnContact}>Contáctanos</button>
+        </div>{" "}
+      </div>
     </div>
   );
 };
 // https://simplybook.me/es/software-de-reservas-empresariales
 export default Page;
-
