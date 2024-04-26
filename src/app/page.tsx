@@ -28,6 +28,7 @@ import geolocalitaton from "../app/assets/imagenes/imgPhone.png";
 import imgMaps from "../app/assets/imagenes/imgMap.png";
 import SectionDescription from "./components/sectionDescription";
 import OfferEnterprises from "./components/offerEnterprises";
+import Footer from "./components/footer";
 
 const Mockup = [
   {
@@ -130,7 +131,7 @@ const Page: FC = () => {
         <div className={styles.containTextOur5Enterprises}>
           <h3 className={styles.textTitle}>Nuestra Empresa</h3>
           <p id="revealText" className={styles.textInterEnterprises}>
-            En InDeveloper, estamos dedicados a la creación de aplicativos web
+            En InDeveloper.co, estamos dedicados a la creación de aplicativos web
             innovadores que impulsan el éxito y la transformación digital. Nos
             especializamos en el desarrollo ágil y personalizado de soluciones
             web adaptadas a las necesidades únicas de nuestros clientes.
@@ -138,7 +139,7 @@ const Page: FC = () => {
         </div>
       </div>
       <div className={styles.containTitlePrincipal}>
-        <h3 className={styles.titlePrincipal}>InDeveloper-Posicionamiento</h3>
+        <h3 className={styles.titlePrincipal}>InDeveloper.co-Posicionamiento</h3>
         <p className={styles.subtitlePrincipal}>
           Presentamos a usted nuestra gama de servicios.
         </p>
@@ -203,7 +204,7 @@ const Page: FC = () => {
 
       <div className={styles.titleOfferContain}>
         <h3 className={styles.titleOffer}>
-          Qué ofrece InDeveloper a las <span>empresas</span>
+          Qué ofrece InDeveloper.co a las <span>empresas</span>
         </h3>
       </div>
       <OfferEnterprises />
@@ -379,13 +380,14 @@ const Page: FC = () => {
           </span>
         </h3>
         <p className={styles.descriptionFinishContac}>
-          Contacta a nuestros expertos y descubre cómo InDeveloper puede
+          Contacta a nuestros expertos y descubre cómo InDeveloper.co puede
           optimizar la eficiencia de tu sitio web empresarial.
         </p>
         <div className={styles.containBtnContact}>
           <button className={styles.btnContact}>Contáctanos</button>
         </div>{" "}
       </div>
+      <Footer/>
     </div>
   );
 };

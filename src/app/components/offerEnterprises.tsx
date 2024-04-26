@@ -68,7 +68,7 @@ const OfferEnterprises: FC = () => {
         </div>
         <div className={styles.containDescriptionOffer}>
           <p className={styles.descriptionOffer}>
-            InDeveloper cumple con el RGPD y cuenta con seguridad dedicada,
+            InDeveloper.co cumple con el RGPD y cuenta con seguridad dedicada,
             además de oficiales DPO que garantizan privacidad y seguridad.
             Comunicaciones seguras y copias de seguridad diarias garantizan la
             integridad y previenen la pérdida de datos. Haga clic aquí para
