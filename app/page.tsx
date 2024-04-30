@@ -1,13 +1,8 @@
 "use client";
 import Image from "next/image";
-import dynamic from "next/dynamic";
-import person from "../app/assets/imagenes/imgPrincipal.jpg";
-import back from "../app/assets/imagenes/img-back.jpg";
-import enterprises from "../app/assets/imagenes/img-empresa.jpg";
 import styles from "./styles/page.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faBurger,
   faChartColumn,
   faChartGantt,
   faLockOpen,
@@ -29,6 +24,8 @@ import imgMaps from "../app/assets/imagenes/imgMap.png";
 import SectionDescription from "./components/sectionDescription";
 import OfferEnterprises from "./components/offerEnterprises";
 import Footer from "./components/footer";
+import Link from "next/link";
+import Header from "./components/header";
 
 const Mockup = [
   {
@@ -87,6 +84,12 @@ const Page: FC = () => {
     }
   };
 
+  // const handleClickDash = () => {
+  // 	router.push(
+  // 		'/facebook.com/'
+  // 	)
+  // }
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -96,32 +99,7 @@ const Page: FC = () => {
 
   return (
     <div className={styles.main}>
-      <div className={styles.containHeader}>
-        <div className={styles.containInternHeaderFlex}>
-          <div className={styles.ensayo}>
-            <div className={styles.containLogo}>
-              <h2 className={styles.logoIntern}>Logo</h2>
-            </div>
-            <div onClick={handelVisible} className={styles.containIconHamburg}>
-              <FontAwesomeIcon className={styles.iconHamburg} icon={faBurger} />
-            </div>
-          </div>
-
-          <div
-            className={styles.containAddMenuinternNone}
-            style={{ height: isVisible ? "20vh" : "0" }}
-          >
-            <div className={styles.containMenu}>
-              <li className={styles.listIntern}>Empresas</li>
-              <li className={styles.listIntern}>Industrias</li>
-              <li className={styles.listIntern}>Precio</li>
-              <li className={styles.listIntern}>Contacto</li>
-            </div>
-          </div>
-
-          <button className={styles.btnContactIntern}>Contactáctanos</button>
-        </div>
-      </div>
+      <Header />
       {/* ********SLIDER******* */}
       <Carrousele />
       <div className={styles.containOurEnterprisesFlex}>
@@ -131,15 +109,18 @@ const Page: FC = () => {
         <div className={styles.containTextOur5Enterprises}>
           <h3 className={styles.textTitle}>Nuestra Empresa</h3>
           <p id="revealText" className={styles.textInterEnterprises}>
-            En InDeveloper.co, estamos dedicados a la creación de aplicativos web
-            innovadores que impulsan el éxito y la transformación digital. Nos
-            especializamos en el desarrollo ágil y personalizado de soluciones
-            web adaptadas a las necesidades únicas de nuestros clientes.
+            En InDeveloper.co, estamos dedicados a la creación de aplicativos
+            web innovadores que impulsan el éxito y la transformación digital.
+            Nos especializamos en el desarrollo ágil y personalizado de
+            soluciones web adaptadas a las necesidades únicas de nuestros
+            clientes.
           </p>
         </div>
       </div>
       <div className={styles.containTitlePrincipal}>
-        <h3 className={styles.titlePrincipal}>InDeveloper.co-Posicionamiento</h3>
+        <h3 className={styles.titlePrincipal}>
+          InDeveloper.co-Posicionamiento
+        </h3>
         <p className={styles.subtitlePrincipal}>
           Presentamos a usted nuestra gama de servicios.
         </p>
@@ -387,7 +368,7 @@ const Page: FC = () => {
           <button className={styles.btnContact}>Contáctanos</button>
         </div>{" "}
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

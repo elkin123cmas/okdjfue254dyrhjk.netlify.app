@@ -4,108 +4,9 @@
 }
 
 /* ***********HEADER********** */
-.containHeader {
-  width: 100%;
-  height: 5rem;
-  background: radial-gradient(
-    circle,
-    rgba(7, 80, 161, 1) 1%,
-    rgba(6, 44, 85, 1) 100%,
-    rgba(7, 80, 161, 1) 100%
-  );
-}
-.containInternHeaderFlex {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  /* background-color: #13aaff; */
-}
-.containLogo {
-  width: 7rem;
-  height: auto;
-  margin: auto;
-  /* background-color: green; */
-}
-.logoIntern {
-  text-align: center;
-  color: #d4f2ff;
-}
-.logoIntern:hover {
-  cursor: pointer;
-}
-.containMenu {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  /* background-color: tomato; */
-}
-.listIntern {
-  list-style: none;
-  font-size: 1.6rem;
-  margin-right: 6rem;
-  color: #d4f2ff;
-  transition: all ease 0.4s;
-}
-.listIntern:last-child {
-  margin-right: 0;
-}
-.listIntern:hover {
-  cursor: pointer;
-  color: #7de0ff;
-}
-.btnContactIntern {
-  display: block;
-  border: none;
-  border-radius: 1rem;
-  width: auto;
-  height: auto;
-  margin: auto;
-  padding: 0.3rem 1rem;
-  font-size: 1.5rem;
-  transition: all ease-out 0.3s;
-  color: #d4f2ff;
-  background-color: #0089ff;
-}
-.btnContactIntern:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  color: #7de0ff;
-  background-color: #005cce;
-}
 
-/* ***********FINISH-HEADER********** */
 
-/* ********MENU RESPONSIVE HAMBURG******* */
-.containIconHamburg {
-  display: none;
-}
-.containIconHamburg {
-  animation: rotar 2s alternate;
-}
-@keyframes rotar {
-  0% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(10deg);
-  }
-  40% {
-    transform: rotate(-15deg);
-  }
-  60% {
-    transform: rotate(15deg);
-  }
-  80% {
-    transform: rotate(-10deg);
-  }
-  100% {
-    transform: rotate(0deg);
-  }
-}
+
 /* *********OUR ENTERPRISES******** */
 .containOurEnterprisesFlex {
   display: flex;
@@ -475,6 +376,7 @@
 
 .containImgAndText {
   position: relative;
+  margin-top: 8rem;
   width: 100%;
   height: 100%;
   /* background-color: red; */
@@ -553,75 +455,7 @@
   /* background-color: yellowgreen; */
 }
 @media screen and (max-width: 480px) {
-  .containIconHamburg {
-    display: block;
-    width: 2.5rem;
-    height: 2rem;
-  }
-  .containIconHamburg:hover {
-    cursor: pointer;
-    color: #13aaff;
-  }
-  .iconHamburg {
-    width: 100%;
-    height: 100%;
-    color: #0089ff;
-  }
-  .containHeader {
-    width: 100%;
-    height: fit-content;
-    padding: 1rem;
-  }
-  .containInternHeaderFlex {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  .ensayo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-  .containLogo {
-    width: 5rem;
-    height: auto;
-    margin: 0;
-  }
-
-  .logoIntern {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .containAddMenuinternNone {
-    display: block;
-    transition: height ease-in-out 0.5s;
-    overflow: hidden;
-  }
-  .containMenu {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 1.5rem 0;
-    transition: height ease-in-out 0.5s;
-    /* background-color: tomato; */
-  }
-  .listIntern {
-    font-size: 1.2rem;
-    margin-right: 0;
-    margin: 1.2rem 0;
-  }
-  .listIntern:hover {
-    cursor: pointer;
-    color: #7de0ff;
-  }
-  .btnContactIntern {
-    display: none;
-  }
+  
 
   /* *********OUR ENTERPRISES******** */
   .containOurEnterprisesFlex {

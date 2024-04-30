@@ -1,8 +1,6 @@
 import { FC } from "react";
 import styles from "../styles/components/offerEnterprises.module.css";
-import Image from "next/image";
 import {
-  faBurger,
   faShop,
   faScrewdriverWrench,
   faShieldHalved,
@@ -16,7 +14,7 @@ const OfferEnterprises: FC = () => {
   return (
     <div className={styles.containerOfferGrids}>
       <div className={styles.containInternOffer}>
-        <div className={styles.containImgOffer}>
+        <div className={styles.containImgOfferInter}>
           <FontAwesomeIcon className={styles.iconHamburg} icon={faShop} />{" "}
         </div>
         <div className={styles.titleOfferContain}>
@@ -35,7 +33,7 @@ const OfferEnterprises: FC = () => {
         </div>
       </div>
       <div className={styles.containInternOffer}>
-        <div className={styles.containImgOffer}>
+        <div className={styles.containImgOfferInter}>
           <FontAwesomeIcon
             className={styles.iconHamburg}
             icon={faScrewdriverWrench}
@@ -57,7 +55,7 @@ const OfferEnterprises: FC = () => {
         </div>
       </div>
       <div className={styles.containInternOffer}>
-        <div className={styles.containImgOffer}>
+        <div className={styles.containImgOfferInter}>
           <FontAwesomeIcon
             className={styles.iconHamburg}
             icon={faShieldHalved}
@@ -80,7 +78,7 @@ const OfferEnterprises: FC = () => {
         </div>
       </div>
       <div className={styles.containInternOffer}>
-        <div className={styles.containImgOffer}>
+        <div className={styles.containImgOfferInter}>
           <FontAwesomeIcon className={styles.iconHamburg} icon={faTape} />{" "}
         </div>
         <div className={styles.titleOfferContain}>
@@ -99,7 +97,7 @@ const OfferEnterprises: FC = () => {
         </div>
       </div>
       <div className={styles.containInternOffer}>
-        <div className={styles.containImgOffer}>
+        <div className={styles.containImgOfferInter}>
           <FontAwesomeIcon className={styles.iconHamburg} icon={faServer} />{" "}
         </div>
         <div className={styles.titleOfferContain}>
@@ -118,7 +116,7 @@ const OfferEnterprises: FC = () => {
         </div>
       </div>
       <div className={styles.containInternOffer}>
-        <div className={styles.containImgOffer}>
+        <div className={styles.containImgOfferInter}>
           <FontAwesomeIcon className={styles.iconHamburg} icon={faSpinner} />{" "}
         </div>
         <div className={styles.titleOfferContain}>
