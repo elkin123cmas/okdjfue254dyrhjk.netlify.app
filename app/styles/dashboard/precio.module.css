@@ -238,6 +238,7 @@
   text-align: center;
   list-style: none;
   padding-bottom: 1rem;
+  color: #072b4a;
 }
 @media screen and (max-width:480px) {
     .containOfferFree {

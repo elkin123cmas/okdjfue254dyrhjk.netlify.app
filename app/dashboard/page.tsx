@@ -53,7 +53,9 @@ const Precio: FC = () => {
           </div>
           <div className={styles.containListPricesDescription}>
             <ul className={styles.containListPrices}>
-              <li className={styles.listPrices}>6 Plugins</li>
+              <li className={styles.listPrices}>5 Plugins</li>
+              <li className={styles.listPrices}>1 Landing Page</li>
+
               <li className={styles.listPrices}>3 accesos del personal</li>
               <li className={styles.listPrices}>100 reservas/mes</li>
             </ul>
@@ -69,8 +71,10 @@ const Precio: FC = () => {
           </div>
           <div className={styles.containListPricesDescription}>
             <ul className={styles.containListPrices}>
-              <li className={styles.listPrices}>12 Plugins</li>
+              <li className={styles.listPrices}>10 Plugins</li>
+              <li className={styles.listPrices}>1 Página web</li>
               <li className={styles.listPrices}>6 accesos del personal</li>
+
               <li className={styles.listPrices}>2.000 reservas/mes</li>
             </ul>
           </div>
@@ -101,36 +105,62 @@ const Precio: FC = () => {
             <div className={styles.containIncludeIntern}>
               <ul className={styles.containListInclude}>
                 <li className={styles.listInclude}>
-                  <FontAwesomeIcon className={styles.iconCheck} icon={faSquareCheck} />Sin contratos vinculantes
+                  <FontAwesomeIcon
+                    className={styles.iconCheck}
+                    icon={faSquareCheck}
+                  />
+                  Sin contratos vinculantes
                 </li>
                 <li className={styles.listInclude}>
-                  <FontAwesomeIcon className={styles.iconCheck} icon={faSquareCheck} />Sin necesidad de instalar software
-                </li>
-                
-              </ul>
-            </div>
-            <div className={styles.containIncludeIntern}>
-              <ul className={styles.containListInclude}>
-                <li className={styles.listInclude}>
-                  <FontAwesomeIcon className={styles.iconCheck} icon={faSquareCheck} />Integración con sitios web
-                </li>
-                <li className={styles.listInclude}>
-                  <FontAwesomeIcon className={styles.iconCheck} icon={faSquareCheck} />Garantizamos la protección de datos
-                </li>
-                <li className={styles.listInclude}>
-                  <FontAwesomeIcon className={styles.iconCheck} icon={faSquareCheck} />Actualizaciones automáticas
+                  <FontAwesomeIcon
+                    className={styles.iconCheck}
+                    icon={faSquareCheck}
+                  />
+                  Sin necesidad de instalar software
                 </li>
               </ul>
             </div>
             <div className={styles.containIncludeIntern}>
               <ul className={styles.containListInclude}>
                 <li className={styles.listInclude}>
-                  <FontAwesomeIcon className={styles.iconCheck} icon={faSquareCheck} />Soporte técnico gratuito
+                  <FontAwesomeIcon
+                    className={styles.iconCheck}
+                    icon={faSquareCheck}
+                  />
+                  Integración con sitios web
                 </li>
                 <li className={styles.listInclude}>
-                  <FontAwesomeIcon className={styles.iconCheck} icon={faSquareCheck} />Acceso disponible en todo momento y desde cualquier lugar
+                  <FontAwesomeIcon
+                    className={styles.iconCheck}
+                    icon={faSquareCheck}
+                  />
+                  Garantizamos la protección de datos
                 </li>
-                
+                <li className={styles.listInclude}>
+                  <FontAwesomeIcon
+                    className={styles.iconCheck}
+                    icon={faSquareCheck}
+                  />
+                  Actualizaciones automáticas
+                </li>
+              </ul>
+            </div>
+            <div className={styles.containIncludeIntern}>
+              <ul className={styles.containListInclude}>
+                <li className={styles.listInclude}>
+                  <FontAwesomeIcon
+                    className={styles.iconCheck}
+                    icon={faSquareCheck}
+                  />
+                  Soporte técnico gratuito
+                </li>
+                <li className={styles.listInclude}>
+                  <FontAwesomeIcon
+                    className={styles.iconCheck}
+                    icon={faSquareCheck}
+                  />
+                  Acceso disponible en todo momento y desde cualquier lugar
+                </li>
               </ul>
             </div>
           </div>
