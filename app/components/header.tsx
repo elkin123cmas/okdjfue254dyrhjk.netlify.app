@@ -1,7 +1,7 @@
 "use client";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBurger } from "@fortawesome/free-solid-svg-icons";
+import { faBurger, faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import styles from "../styles/components/header.module.css";
 import { FC, useEffect, useRef, useState } from "react";
 import Link from "next/link";
@@ -10,11 +10,19 @@ const Header: FC = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
   const [isScrollServices, setIsScrollServices] = useState(false);
+  const [isSublist, setISublist] = useState(false);
   // const [currentPath, setCurrentPath] = useState("");
   ///////////////////////
   const contentRef = useRef<HTMLDivElement>(null);
 
   /////////////////////////
+
+  const handleEnter = () => {
+    setISublist(true);
+  };
+  const handleLeave = () => {
+    setISublist(false);
+  };
 
   const handelVisible = () => {
     setIsVisible(!isVisible);
@@ -50,7 +58,7 @@ const Header: FC = () => {
 
   return (
     <div className={styles.containHeader}>
-      <div className={styles.containInternHeaderFlex}>
+      <div  className={styles.containInternHeaderFlex}>
         <div className={styles.ensayo}>
           <div className={styles.containLogo}>
             <h2 className={styles.logoIntern}>Logo</h2>
@@ -62,12 +70,12 @@ const Header: FC = () => {
 
         <div
           className={styles.containAddMenuinternNone}
-          style={{ height: isVisible ? "28vh" : "0" }}
+          style={{ height: isVisible ? "35vh" : "0" }}
         >
           <div className={styles.containMenu}>
             <Link
               className={
-                styles.listIntern 
+                styles.listIntern
                 // (window.location.pathname === "/"
                 //   ? ` ${styles.listInternUnderline}`
                 //   : "")
@@ -77,17 +85,31 @@ const Header: FC = () => {
               {" "}
               <li>Empresas</li>
             </Link>
-            <Link
-              className={styles.listIntern}
-              href="https://www.youtube.com/watch?v=T3E9Wjbq44E&list=RDIcrbM1l_BoI&index=28"
-              target="_blank"
-            >
+              <Link className={
+                styles.listIntern
+                // (window.location.pathname === "/dashboard"
+                //   ? ` ${styles.listInternUnderline}`
+                //   : "")
+              }
+              href="/functionality">
+              <li  >
               {" "}
-              <li> Casas de Cambio</li>
-            </Link>
+              Funciones
+              {/* {isSublist && (
+                <div className={`${styles.containIndustries} ${isSublist ? styles.show : ""}`}>
+                  <ul className={styles.containSubList}>
+                    <li className={styles.subListIntern}>Belleza & Bienestar</li>
+                    <li className={styles.subListIntern}>Deportes & Fitness</li>
+                    <li className={styles.subListIntern}>Tattoo & Diseño</li>
+                  </ul>
+                </div>
+              )} */}
+            </li>
+              </Link>
+           
             <Link
               className={
-                styles.listIntern 
+                styles.listIntern
                 // (window.location.pathname === "/dashboard"
                 //   ? ` ${styles.listInternUnderline}`
                 //   : "")
@@ -104,6 +126,7 @@ const Header: FC = () => {
 
         <button className={styles.btnContactIntern}>Contactáctanos</button>
       </div>
+     
     </div>
   );
 };

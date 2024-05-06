@@ -1,0 +1,233 @@
+.containGeneral {
+  width: 100%;
+  height: 100%;
+  margin-top: 3rem;
+}
+.containFunctionsGrid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  justify-content: center;
+  align-items: center;
+  width: 55%;
+  margin: auto;
+  /* background-color: yellowgreen; */
+}
+
+.functionsInternGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 10rem;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  transition: all ease 0.6s;
+}
+.functionsInternGrid:first-child {
+  background: rgb(143, 177, 255);
+  background: radial-gradient(
+    circle,
+    rgba(143, 177, 255, 1) 0%,
+    rgba(237, 251, 255, 1) 100%,
+    rgba(239, 251, 255, 1) 100%
+  );
+}
+.functionsInternGrid:hover {
+  background: rgb(143, 177, 255);
+  background: radial-gradient(
+    circle,
+    rgba(143, 177, 255, 1) 0%,
+    rgba(237, 251, 255, 1) 100%,
+    rgba(239, 251, 255, 1) 100%
+  );
+  cursor: pointer;
+  color: #06364b;
+}
+
+.containIconIntern {
+  width: 4rem;
+  height: 3.5rem;
+}
+
+.iconIntern {
+  width: 100%;
+  height: 100%;
+  color: #effbff;
+  transition: color 0.3s ease;
+}
+
+.textFunction {
+  font-size: 1.5rem;
+  text-align: center;
+  padding-top: 1rem;
+  font-weight: 300;
+  color: #afb0b0;
+  transition: color 0.3s ease;
+}
+
+.functionsInternGrid:hover .iconIntern {
+  color: #06364b;
+}
+
+.functionsInternGrid:hover .textFunction {
+  color: #06364b;
+}
+.functionsInternGrid:first-child .iconIntern {
+  color: #06364b;
+}
+
+.functionsInternGrid:first-child .textFunction {
+  color: #06364b;
+}
+/* *************CHANGE DESCRIPTIONS CLICK************** */
+.containInfoIconsClick {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30rem;
+  background: rgb(0, 123, 166);
+  background: linear-gradient(
+    270deg,
+    rgba(0, 123, 166, 1) 0%,
+    rgba(12, 26, 75, 1) 100%,
+    rgba(0, 123, 166, 1) 100%
+  );
+}
+.containInfoIntern {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  padding-bottom: 1rem;
+  /* background-color: tomato; */
+}
+.textTitle {
+  font-size: 4rem;
+  color: #effbff;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.textDescription {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.5;
+  color: #afb0b0;
+}
+.containImgCalendar {
+  width: 35rem;
+  height: 30rem;
+  margin: auto;
+  margin-top: -5rem;
+  /* background-color: yellowgreen; */
+}
+.imgCalendar {
+  width: 100%;
+  height: 100%;
+}
+
+/* **********GRID DECRIPTION********* */
+.containGridCalendar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 8rem;
+  /* background-color: rgb(70, 28, 70); */
+}
+.containInternGridCalendar {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
+  /* background-color: yellowgreen; */
+}
+.containTitleCalendarGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+  /* background-color: turquoise; */
+}
+/* .containIconGrid{
+    width: 2rem;
+    height: 2rem;
+} */
+.iconGridIntern {
+  width: 3rem;
+  height: 2.5rem;
+  color: #edfbff;
+}
+.containDescriptionGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  /* background-color: teal; */
+}
+.titleCalendarGrid {
+  font-size: 2rem;
+  color: #0874b2;
+}
+.descriptionGridIntern {
+  color: #afb0b0;
+  font-size: 1.6rem;
+}
+
+@media screen and (max-width:480px) {
+      .containFunctionsGrid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        width: 98%;
+        /* background-color: yellowgreen; */
+      }
+      .containIconIntern {
+        width: 3rem;
+        height: 2.5rem;
+      }
+    
+      /* *************CHANGE DESCRIPTIONS CLICK************** */
+      .containInfoIconsClick {
+        margin-top: 4rem;
+        height: 25rem;
+       
+      }
+      .textTitle {
+        font-size: 3rem;
+      }
+      .textDescription {
+        font-size: 1.6rem;
+      }
+      .containImgCalendar {
+        width: 30rem;
+        height: 25rem;
+        margin-top: -3rem;
+        /* background-color: yellowgreen; */
+      }
+      
+      /* **********GRID DECRIPTION********* */
+      .containGridCalendar {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5rem;
+        width: 90%;
+        margin-top: 7rem;
+        /* background-color: rgb(70, 28, 70); */
+      }
+      .iconGridIntern {
+        width: 2.5rem;
+        height: 2rem;
+      }
+      .containDescriptionGrid {
+        text-align: center;
+        /* background-color: teal; */
+      }
+}

@@ -1,83 +1,84 @@
 .containHeader {
-  /* position: fixed;
-  top: 0;
-  left: 0; */
-    width: 100%;
-    height: 5rem;
-    background: radial-gradient(
-      circle,
-      rgba(7, 80, 161, 1) 1%,
-      rgba(6, 44, 85, 1) 100%,
-      rgba(7, 80, 161, 1) 100%
-    );
-    /* z-index: 999; */
-  }
-  .containInternHeaderFlex {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    /* background-color: #13aaff; */
-  }
-  .containLogo {
-    width: 7rem;
-    height: auto;
-    margin: auto;
-    /* background-color: green; */
-  }
-  .logoIntern {
-    text-align: center;
-    color: #d4f2ff;
-  }
-  .logoIntern:hover {
-    cursor: pointer;
-  }
-  .containMenu {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 60rem;
-    /* background-color: tomato; */
-  }
-  .listIntern {
-    list-style: none;
-    font-size: 1.6rem;
-    margin-right: 6rem;
-    color: #d4f2ff;
-    transition: all ease 0.4s;
-  }
-  .listIntern:last-child {
-    margin-right: 0;
-  }
-  .listIntern:hover {
-    cursor: pointer;
-    color: #7de0ff;
-  }
-  .btnContactIntern {
-    display: block;
-    border: none;
-    border-radius: 1rem;
-    width: auto;
-    height: auto;
-    margin: auto;
-    padding: 0.3rem 1rem;
-    font-size: 1.5rem;
-    transition: all ease-out 0.3s;
-    color: #d4f2ff;
-    background-color: #0089ff;
-  }
-  .btnContactIntern:hover {
-    cursor: pointer;
-    transform: scale(1.1);
-    color: #7de0ff;
-    background-color: #005cce;
-  }
-  
-  /* ***********FINISH-HEADER********** */
-  /* ********MENU RESPONSIVE HAMBURG******* */
+  width: 100%;
+  height: 5rem;
+  background: radial-gradient(
+    circle,
+    rgba(7, 80, 161, 1) 1%,
+    rgba(6, 44, 85, 1) 100%,
+    rgba(7, 80, 161, 1) 100%
+  );
+}
+.containInternHeaderFlex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* background-color: #13aaff; */
+}
+.containLogo {
+  width: 7rem;
+  height: auto;
+  margin: auto;
+  /* background-color: green; */
+}
+.logoIntern {
+  text-align: center;
+  color: #d4f2ff;
+}
+.logoIntern:hover {
+  cursor: pointer;
+}
+.containMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 60rem;
+  /* background-color: tomato; */
+}
+.listIntern {
+  display: block;
+
+  height: 3rem;
+  padding: 0 1rem;
+  list-style: none;
+  font-size: 1.6rem;
+  margin-right: 6rem;
+  color: #d4f2ff;
+  transition: all ease 0.4s;
+  /* background-color: yellowgreen; */
+}
+.listIntern:last-child {
+  margin-right: 0;
+}
+.listIntern:hover {
+  cursor: pointer;
+  color: #7de0ff;
+}
+.btnContactIntern {
+  display: block;
+  border: none;
+  border-radius: 1rem;
+  width: auto;
+  height: auto;
+  margin: auto;
+  padding: 0.3rem 1rem;
+  font-size: 1.5rem;
+  transition: all ease-out 0.3s;
+  color: #d4f2ff;
+  background-color: #0089ff;
+}
+.btnContactIntern:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: #7de0ff;
+  background-color: #005cce;
+}
+
+/* ***********FINISH-HEADER********** */
+/* ********MENU RESPONSIVE HAMBURG******* */
 .containIconHamburg {
   display: none;
 }
@@ -105,92 +106,137 @@
   }
 }
 
-  /* ******STYLES ROUTER********** */
-  .listInternUnderline{
-    color: #ecfaff;
-    font-weight: bold;
-    text-decoration: underline;
-  }
+/* ******STYLES ROUTER********** */
+.listInternUnderline {
+  color: #ecfaff;
+  font-weight: bold;
+  text-decoration: underline;
+}
 
-  /* ********MENU RESPONSIVE HAMBURG******* */
+/* ********MENU RESPONSIVE HAMBURG******* */
 .containIconHamburg {
-    display: none;
-  }
-  .containIconHamburg {
-    animation: rotar 2s alternate;
-  }
+  display: none;
+}
+.containIconHamburg {
+  animation: rotar 2s alternate;
+}
+/* *********SUBLIST********* */
+.containIndustries {
+  position: absolute;
+  width: fit-content;
+  height: fit-content;
+  top: 7.8%;
+  left: 42.6%;
+  background: radial-gradient(
+    circle,
+    rgba(7, 80, 161, 1) 1%,
+    rgba(6, 44, 85, 1) 100%,
+    rgba(7, 80, 161, 1) 100%
+  );
+  border: 1px solid #009ace ;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+   border-radius: 1rem;
+  padding: 10px;
+  z-index: 100;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease, visibility 0.3s ease; /* Transición suave */
+}
+.containIndustries ul {
+  list-style: none;
+  padding: 0;
+}
+
+.containIndustries li {
+  padding: 8px 0;
+  color: #d4f2ff;
+  font-size: 14px;
+}
+.containIndustries.show {
+  opacity: 1;
+  visibility: visible;
+}
+.subListIntern{
+  font-size: 2rem;
+  transition: all ease .4s;
+}
+.subListIntern:hover{
+  cursor: pointer;
+  color: #009ace;
+}
+
 
 @media screen and (max-width: 480px) {
-    .containIconHamburg {
-        display: block;
-        width: 2.5rem;
-        height: 2rem;
-      }
-      .containIconHamburg:hover {
-        cursor: pointer;
-        color: #13aaff;
-      }
-      .iconHamburg {
-        width: 100%;
-        height: 100%;
-        color: #0089ff;
-      }
-      .containHeader {
-        width: 100%;
-        height: fit-content;
-        padding: 1rem;
-      }
-      .containInternHeaderFlex {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        height: 100%;
-        /* background-color: yellowgreen; */
-      }
-      .ensayo {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-      }
-      .containLogo {
-        width: 5rem;
-        height: auto;
-        margin: 0;
-      }
-    
-      .logoIntern {
-        font-size: 2rem;
-        text-align: center;
-      }
-    
-      .containAddMenuinternNone {
-        display: block;
-        transition: height ease-in-out 0.5s;
-        
-        overflow: hidden;
-      }
-      .containMenu {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        padding: 1.5rem 0;
-        transition: height ease-in-out 0.5s;
-        /* background-color: tomato; */
-      }
-      .listIntern {
-        font-size: 1.2rem;
-        margin-right: 0;
-        margin: 1.2rem 0;
-      }
-      .listIntern:hover {
-        cursor: pointer;
-        color: #7de0ff;
-      }
-      .btnContactIntern {
-        display: none;
-      }
+  .containIconHamburg {
+    display: block;
+    width: 2.5rem;
+    height: 2rem;
+  }
+  .containIconHamburg:hover {
+    cursor: pointer;
+    color: #13aaff;
+  }
+  .iconHamburg {
+    width: 100%;
+    height: 100%;
+    color: #0089ff;
+  }
+  .containHeader {
+    width: 100%;
+    height: fit-content;
+    padding: 1rem;
+  }
+  .containInternHeaderFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
+    /* background-color: yellowgreen; */
+  }
+  .ensayo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .containLogo {
+    width: 5rem;
+    height: auto;
+    margin: 0;
+  }
+
+  .logoIntern {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .containAddMenuinternNone {
+    display: block;
+    transition: height ease-in-out 0.5s;
+
+    overflow: hidden;
+  }
+  .containMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1.5rem 0;
+    transition: height ease-in-out 0.5s;
+    /* background-color: tomato; */
+  }
+  .listIntern {
+    font-size: 1.2rem;
+    margin-right: 0;
+    margin: 1.2rem 0;
+  }
+  .listIntern:hover {
+    cursor: pointer;
+    color: #7de0ff;
+  }
+  .btnContactIntern {
+    display: none;
+  }
 }
