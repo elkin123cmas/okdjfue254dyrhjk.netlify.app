@@ -194,7 +194,13 @@
         width: 3rem;
         height: 2.5rem;
       }
-    
+      .containInfoIntern {
+        width: 98%;
+        height: auto;
+        margin: auto;
+        padding-bottom: 1rem;
+        /* background-color: tomato; */
+      }
       /* *************CHANGE DESCRIPTIONS CLICK************** */
       .containInfoIconsClick {
         margin-top: 4rem;
