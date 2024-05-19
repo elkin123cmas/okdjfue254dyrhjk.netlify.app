@@ -53,9 +53,9 @@ const analitic = {
   img: web,
 };
 const hosting = {
-  title: "Integración fluida con tu sitio web",
+  title: " Hosting y seguridad avanzados",
   description:
-    "Facilita que tus clientes reserven directamente en tu página web sin costos adicionales. La integración perfecta en tu sitio web está incluida en la asequible cuota mensual de InDeveloper.co.",
+    "Confía en la arquitectura del sistema de nuestra plataforma, que cumple con la normativa ISO 27001 y está basada en la nube, así como en su infraestructura redundante de servidores distribuidos globalmente para garantizar que tu aplicación siga funcionando sin problemas ante cualquier eventualidad.",
   img: web,
 };
 
@@ -147,7 +147,7 @@ const Precio: FC = () => {
           <h3 className={styles.textFunction}>Aumenta las ventas</h3>
         </div>
         <div
-         onClick={() => handleClick("analitic")}
+          onClick={() => handleClick("analitic")}
           className={
             activeSection === "analitic"
               ? styles.addColor
@@ -162,7 +162,14 @@ const Precio: FC = () => {
           </div>
           <h3 className={styles.textFunction}>Analiza tu negocio</h3>
         </div>
-        <div className={styles.functionsInternGrid}>
+        <div
+          onClick={() => handleClick("hosting")}
+          className={
+            activeSection === "hosting"
+              ? styles.addColor
+              : styles.functionsInternGrid
+          }
+        >
           <div className={styles.containIconIntern}>
             <FontAwesomeIcon className={styles.iconIntern} icon={faServer} />
           </div>
@@ -755,9 +762,7 @@ const Precio: FC = () => {
           <div className={styles.containInfoIconsClick}>
             <div className={styles.containInfoIntern}>
               <h3 className={styles.textTitle}>{analitic.title}</h3>
-              <p className={styles.textDescription}>
-                {analitic.description}
-              </p>
+              <p className={styles.textDescription}>{analitic.description}</p>
             </div>
           </div>
           <div className={styles.containImgCalendar}>
@@ -778,10 +783,12 @@ const Precio: FC = () => {
 
               <div className={styles.containDescriptionGrid}>
                 <h3 className={styles.titleCalendarGrid}>
-                Análisis detallado de rendimiento
+                  Análisis detallado de rendimiento
                 </h3>
                 <p className={styles.descriptionGridIntern}>
-                Obtén informes exhaustivos sobre el desempeño de tu negocio, desde ingresos y clientes hasta preferencias y utilización de recursos.
+                  Obtén informes exhaustivos sobre el desempeño de tu negocio,
+                  desde ingresos y clientes hasta preferencias y utilización de
+                  recursos.
                 </p>
               </div>
             </div>
@@ -795,10 +802,11 @@ const Precio: FC = () => {
 
               <div className={styles.containDescriptionGrid}>
                 <h3 className={styles.titleCalendarGrid}>
-                Visualización gráfica del negocio
+                  Visualización gráfica del negocio
                 </h3>
                 <p className={styles.descriptionGridIntern}>
-                Observa fácilmente el rendimiento actualizado de tu negocio con gráficos claros y concisos proporcionados por Bookeo.
+                  Observa fácilmente el rendimiento actualizado de tu negocio
+                  con gráficos claros y concisos proporcionados por Bookeo.
                 </p>
               </div>
             </div>
@@ -812,10 +820,12 @@ const Precio: FC = () => {
 
               <div className={styles.containDescriptionGrid}>
                 <h3 className={styles.titleCalendarGrid}>
-                Integración con Google Analytics
+                  Integración con Google Analytics
                 </h3>
                 <p className={styles.descriptionGridIntern}>
-                Descubre el origen de tus clientes y evalúa el impacto de tus campañas de marketing gracias a la integración con Google Analytics/Adwords de Bookeo.
+                  Descubre el origen de tus clientes y evalúa el impacto de tus
+                  campañas de marketing gracias a la integración con Google
+                  Analytics/Adwords de Bookeo.
                 </p>
               </div>
             </div>
@@ -830,10 +840,11 @@ const Precio: FC = () => {
 
               <div className={styles.containDescriptionGrid}>
                 <h3 className={styles.titleCalendarGrid}>
-                Reportes personalizados
+                  Reportes personalizados
                 </h3>
                 <p className={styles.descriptionGridIntern}>
-                Crea informes adaptados a tus necesidades, ya sea para cumplir con regulaciones o para análisis internos.
+                  Crea informes adaptados a tus necesidades, ya sea para cumplir
+                  con regulaciones o para análisis internos.
                 </p>
               </div>
             </div>
@@ -847,14 +858,15 @@ const Precio: FC = () => {
 
               <div className={styles.containDescriptionGrid}>
                 <h3 className={styles.titleCalendarGrid}>
-                Seguimiento personalizado de campañas
+                  Seguimiento personalizado de campañas
                 </h3>
                 <p className={styles.descriptionGridIntern}>
-                Integra tus propias herramientas de análisis para monitorear el tráfico, las fuentes de ingresos y las conversiones de manera específica y detallada.
+                  Integra tus propias herramientas de análisis para monitorear
+                  el tráfico, las fuentes de ingresos y las conversiones de
+                  manera específica y detallada.
                 </p>
               </div>
             </div>
-           
           </div>
           {/* ************FINISH CONTAIN CALENDAR*********** */}
         </div>
@@ -866,17 +878,15 @@ const Precio: FC = () => {
         <div className={styles.containGeneralCalendar}>
           <div className={styles.containInfoIconsClick}>
             <div className={styles.containInfoIntern}>
-              <h3 className={styles.textTitle}>{integration.title}</h3>
-              <p className={styles.textDescription}>
-                {integration.description}
-              </p>
+              <h3 className={styles.textTitle}>{hosting.title}</h3>
+              <p className={styles.textDescription}>{hosting.description}</p>
             </div>
           </div>
           <div className={styles.containImgCalendar}>
             <Image
               className={styles.imgCalendar}
-              src={integration.img}
-              alt="Web"
+              src={hosting.img}
+              alt="hosting"
             />
           </div>
           <div className={styles.containGridCalendar}>
@@ -890,12 +900,14 @@ const Precio: FC = () => {
 
               <div className={styles.containDescriptionGrid}>
                 <h3 className={styles.titleCalendarGrid}>
-                  Integración perfecta en cualquier sitio web
+                  Hosting fiable en la nube
                 </h3>
                 <p className={styles.descriptionGridIntern}>
-                  Ofrece a tus clientes una excelente experiencia de reserva de
-                  citas en tu sitio web. El widget de Bookeo se integra sin
-                  problemas en cualquier sitio HTML, incluidos WordPress.
+                  Arquitectura avanzada: La arquitectura de hosting avanzada de
+                  Bookeo mantiene tu negocio funcionando a la perfección y de
+                  forma continua. Resiliencia ante desastres: Incluso en el caso
+                  de que se produzcan desastres naturales imprevistos, fallos de
+                  hardware o problemas importantes en el centro de datos.
                 </p>
               </div>
             </div>
@@ -909,13 +921,14 @@ const Precio: FC = () => {
 
               <div className={styles.containDescriptionGrid}>
                 <h3 className={styles.titleCalendarGrid}>
-                  Personalización avanzada del diseño
+                  Copias de seguridad continuas
                 </h3>
                 <p className={styles.descriptionGridIntern}>
-                  Personaliza fácilmente el diseño del widget de tu calendario
-                  de citas para que combine perfectamente con el diseño de tu
-                  sitio web. Todo esto está incluido en la asequible cuota
-                  mensual de InDeveloper.co.
+                  Copia de seguridad en tiempo real: Se realiza una copia de
+                  seguridad de todos los datos continuamente y en tiempo real en
+                  dos servidores de réplica independientes. Almacenamiento
+                  redundante: Además, se almacenan 4 instantáneas de copia de
+                  seguridad diarias en servidores redundantes.
                 </p>
               </div>
             </div>
@@ -929,12 +942,14 @@ const Precio: FC = () => {
 
               <div className={styles.containDescriptionGrid}>
                 <h3 className={styles.titleCalendarGrid}>
-                  Carrito de reservas y paquetes de ofertas
+                  El mismo nivel de encriptación utilizado por los bancos
                 </h3>
                 <p className={styles.descriptionGridIntern}>
-                  Vende varios servicios con el carrito de reservas integrado.
-                  Mejora tus ofertas de servicios y talleres ofreciendo extras y
-                  opciones adicionales.
+                  Cifrado SSL/TLS: Como parte de nuestro cumplimiento de la
+                  normativa PCI-DSS, todas las comunicaciones de Bookeo con
+                  nuestros clientes comerciales se cifran utilizando el cifrado
+                  SSL/TLS (128 o 256 bits). Nivel bancario de seguridad: Este es
+                  el mismo nivel de cifrado utilizado por los bancos.
                 </p>
               </div>
             </div>
@@ -949,13 +964,14 @@ const Precio: FC = () => {
 
               <div className={styles.containDescriptionGrid}>
                 <h3 className={styles.titleCalendarGrid}>
-                  Personalización de la navegación de tus clientes
+                  Cobertura mundial de los centros de datos
                 </h3>
                 <p className={styles.descriptionGridIntern}>
-                  Mantén a tus clientes concentrados en lo que les interesa
-                  mediante enlaces directos, botones y widgets. Por ejemplo,
-                  muestra solo servicios o categorías específicos en ciertas
-                  páginas de tu sitio web.
+                  Respuesta rápida: El tiempo de respuesta de tu página web es
+                  más rápido cuando tu centro de datos se encuentra cerca.
+                  Centros de datos globales: Es por eso que Bookeo tiene
+                  múltiples centros de datos en tres zonas geográficas
+                  diferentes: Estados Unidos, Europa y Asia/Pacífico.
                 </p>
               </div>
             </div>
@@ -969,15 +985,18 @@ const Precio: FC = () => {
 
               <div className={styles.containDescriptionGrid}>
                 <h3 className={styles.titleCalendarGrid}>
-                  Reservas a través de Facebook
+                  Réplica automática de servidores
                 </h3>
                 <p className={styles.descriptionGridIntern}>
-                  Acepta reservas de citas en línea desde tu página de Facebook
-                  con la aplicación de Facebook de Bookeo, sin coste adicional.
+                  Réplica idéntica: Cada uno de nuestros servidores tiene 2
+                  réplicas idénticas. Cambio automático: Bookeo cambia
+                  automáticamente a un centro de datos diferente cuando es
+                  necesario para garantizar que tu negocio sigue funcionando sin
+                  interrupciones.
                 </p>
               </div>
             </div>
-            <div className={styles.containInternGridCalendar}>
+            {/* <div className={styles.containInternGridCalendar}>
               <div className={styles.containIconGrid}>
                 <FontAwesomeIcon
                   className={styles.iconGridIntern}
@@ -996,7 +1015,7 @@ const Precio: FC = () => {
                   de servicios y biografías de tus asesores.
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
           {/* ************FINISH CONTAIN CALENDAR*********** */}
         </div>
