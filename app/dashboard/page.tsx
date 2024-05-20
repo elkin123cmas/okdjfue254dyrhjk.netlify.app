@@ -23,7 +23,7 @@ const Precio: FC = () => {
           </button>
         </div>
       </div>
-      <h3 className={styles.titleOfferFree}>InDeveloper.co Citas</h3>
+      <h3 className={styles.titleOfferFree}>InDev.co Citas</h3>
 
       {/* ********SECTION GRID********* */}
       <div className={styles.containInfoGrid}>

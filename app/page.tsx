@@ -109,7 +109,7 @@ const Page: FC = () => {
         <div className={styles.containTextOur5Enterprises}>
           <h3 className={styles.textTitle}>Nuestra Empresa</h3>
           <p id="revealText" className={styles.textInterEnterprises}>
-            En InDeveloper.co, estamos dedicados a la creación de aplicativos
+            En InDev.co, estamos dedicados a la creación de aplicativos
             web innovadores que impulsan el éxito y la transformación digital.
             Nos especializamos en el desarrollo ágil y personalizado de
             soluciones web adaptadas a las necesidades únicas de nuestros
@@ -119,7 +119,7 @@ const Page: FC = () => {
       </div>
       <div className={styles.containTitlePrincipal}>
         <h3 className={styles.titlePrincipal}>
-          InDeveloper.co-Posicionamiento
+          InDev.co-Posicionamiento
         </h3>
         <p className={styles.subtitlePrincipal}>
           Presentamos a usted nuestra gama de servicios.
@@ -185,7 +185,7 @@ const Page: FC = () => {
 
       <div className={styles.titleOfferContain}>
         <h3 className={styles.titleOffer}>
-          Qué ofrece InDeveloper.co a las <span>empresas</span>
+          Qué ofrece InDev.co a las <span>empresas</span>
         </h3>
       </div>
       <OfferEnterprises />
@@ -361,7 +361,7 @@ const Page: FC = () => {
           </span>
         </h3>
         <p className={styles.descriptionFinishContac}>
-          Contacta a nuestros expertos y descubre cómo InDeveloper.co puede
+          Contacta a nuestros expertos y descubre cómo InDev.co puede
           optimizar la eficiencia de tu sitio web empresarial.
         </p>
         <div className={styles.containBtnContact}>

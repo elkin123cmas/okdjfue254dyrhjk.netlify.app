@@ -4,7 +4,10 @@ import { FC, useEffect, useState } from "react";
 import styles from "../styles/functionality/functionality.module.css";
 import Image from "next/image";
 import calendar1 from "../assets/imagenes/imgCalendar.png";
-import web from "../assets/imagenes/imgBelleza.jpg";
+import web from "../assets/imagenes/imagen-webg.png";
+import celulares from "../assets/imagenes/imagenCelulares.png";
+import ventas from "../assets/imagenes/imagenesVenta.png";
+import analitics from "../assets/imagenes/imgAnalitics.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGlobe,
@@ -25,32 +28,32 @@ import {
 const calendar = {
   title: "Llena el aforo de tus clases con facilidad",
   description:
-    "Acepta reservas y gestiona tu horario en tiempo real con InDeveloper.co. Obtén reservas y procesa pagos de forma ágil, evitando anotaciones confusas, reservas duplicadas y llamadas innecesarias.",
+    "Acepta reservas y gestiona tu horario en tiempo real con InDev.co. Obtén reservas y procesa pagos de forma ágil, evitando anotaciones confusas, reservas duplicadas y llamadas innecesarias.",
   img: calendar1,
 };
 const integration = {
   title: "Integración fluida con tu sitio web",
   description:
-    "Facilita que tus clientes reserven directamente en tu página web sin costos adicionales. La integración perfecta en tu sitio web está incluida en la asequible cuota mensual de InDeveloper.co.",
+    "Facilita que tus clientes reserven directamente en tu página web sin costos adicionales. La integración perfecta en tu sitio web está incluida en la asequible cuota mensual de InDev.co.",
   img: web,
 };
 const programte = {
   title: "La programación de citas nunca antes fue tan sencilla",
   description:
     " Di adiós a las interminables listas y a las complicadas hojas de cálculo. Con la avanzada programación de citas de Bookeo, mantente siempre organizado y actualizado en tiempo real, tanto tú como tus profesores.",
-  img: web,
+  img: celulares,
 };
 const commerce = {
   title: "Incrementa las ventas. Fácilmente",
   description:
     "Conviértete en un auténtico profesional del marketing de forma instantánea y haz crecer tu negocio fácilmente con las herramientas de marketing de vanguardia perfectamente integradas.Todo esto está incluido en la pequeña cuota de suscripción mensual.",
-  img: web,
+  img: ventas,
 };
 const analitic = {
   title: "Obtén información con las estadísticas",
   description:
     "Analiza tu negocio como todo un profesional con las estadísticas de Bookeo. Compara datos de las reservas y los ingresos para ver cómo va tu negocio y céntrate en lo que funciona mejor.",
-  img: web,
+  img: analitics,
 };
 const hosting = {
   title: " Hosting y seguridad avanzados",
@@ -208,7 +211,7 @@ const Precio: FC = () => {
                   tus colaboradores
                 </h3>
                 <p className={styles.descriptionGridIntern}>
-                  Accede a tu agenda de InDeveloper.co desde cualquier ubicación
+                  Accede a tu agenda de InDev.co desde cualquier ubicación
                   y en cualquier momento. Consulta las inscripciones en los
                   cursos, las listas de clases y los pagos actualizados al
                   instante. Configura de manera sencilla los permisos de acceso
@@ -231,7 +234,7 @@ const Precio: FC = () => {
                 </h3>
                 <p className={styles.descriptionGridIntern}>
                   Visualiza y gestiona tu calendario en línea desde cualquier
-                  dispositivo móvil. InDeveloper.co se adapta automáticamente al
+                  dispositivo móvil. InDev.co se adapta automáticamente al
                   tamaño y formato de pantalla de cualquier dispositivo, tanto
                   para ti como para tus alumnos. Todo esto está incluido en la
                   pequeña tarifa de suscripción mensual.
@@ -252,7 +255,7 @@ const Precio: FC = () => {
                 </h3>
                 <p className={styles.descriptionGridIntern}>
                   Evita las ausencias sin previo aviso con notificaciones y
-                  recordatorios automáticos. InDeveloper.co enviará
+                  recordatorios automáticos. InDev.co enviará
                   automáticamente correos electrónicos o mensajes de texto
                   recordando a tus alumnos sobre sus reservas, ayudando a
                   reducir costosos olvidos.
@@ -273,7 +276,7 @@ const Precio: FC = () => {
                 </h3>
                 <p className={styles.descriptionGridIntern}>
                   Gracias a las notificaciones automáticas por correo
-                  electrónico y SMS de InDeveloper.co, tu equipo y los
+                  electrónico y SMS de InDev.co, tu equipo y los
                   profesores estarán siempre informados sobre cursos nuevos,
                   reprogramados o cancelados, incluso fuera del horario laboral.
                 </p>
@@ -292,7 +295,7 @@ const Precio: FC = () => {
                   Genera listas de clase detalladas fácilmente
                 </h3>
                 <p className={styles.descriptionGridIntern}>
-                  Con InDeveloper.co, puedes imprimir fácilmente listas de clase
+                  Con InDev.co, puedes imprimir fácilmente listas de clase
                   que incluyan datos de los participantes, pagos realizados y
                   pendientes, así como cualquier otra información adicional
                   seleccionada durante la inscripción. Tus profesores lo
@@ -313,7 +316,7 @@ const Precio: FC = () => {
                   Realiza un seguimiento detallado de cada inscripción
                 </h3>
                 <p className={styles.descriptionGridIntern}>
-                  Con InDeveloper.co, recibirás actualizaciones instantáneas
+                  Con InDev.co, recibirás actualizaciones instantáneas
                   sobre reservas nuevas, reprogramadas o canceladas, y podrás
                   consultar quién las realizó y cuándo. Además, controla
                   automáticamente el uso de cupones de regalo, créditos de
@@ -381,7 +384,7 @@ const Precio: FC = () => {
                   Personaliza fácilmente el diseño del widget de tu calendario
                   de citas para que combine perfectamente con el diseño de tu
                   sitio web. Todo esto está incluido en la asequible cuota
-                  mensual de InDeveloper.co.
+                  mensual de InDev.co.
                 </p>
               </div>
             </div>
@@ -542,7 +545,7 @@ const Precio: FC = () => {
                   Asignar varios proveedores de servicio y ubicaciones ya no es
                   un trabajo de chinos. Asigna fácilmente a tu personal
                   servicios y ubicaciones específicas con el calendario de citas
-                  en línea de InDeveloper.co.
+                  en línea de InDev.co.
                 </p>
               </div>
             </div>
