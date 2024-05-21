@@ -179,7 +179,10 @@
   .containInput {
     position: relative;
     width: 85%;
-    height: 2.5rem;
+    height: 3rem;
+  }
+  .containInput input {
+   color: #def0ff;
   }
   .containTextArea {
     width: 85%;
