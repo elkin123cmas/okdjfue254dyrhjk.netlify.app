@@ -20,7 +20,7 @@ const Carrousele: FC = () => {
     speed: 3000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     autoplaySpeed: 7000,
     cssEase: "linear",
   };
