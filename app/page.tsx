@@ -109,18 +109,15 @@ const Page: FC = () => {
         <div className={styles.containTextOur5Enterprises}>
           <h3 className={styles.textTitle}>Nuestra Empresa</h3>
           <p id="revealText" className={styles.textInterEnterprises}>
-            En InDev.co, estamos dedicados a la creación de aplicativos
-            web innovadores que impulsan el éxito y la transformación digital.
-            Nos especializamos en el desarrollo ágil y personalizado de
-            soluciones web adaptadas a las necesidades únicas de nuestros
-            clientes.
+            En InDev.co, estamos dedicados a la creación de aplicativos web
+            innovadores que impulsan el éxito y la transformación digital. Nos
+            especializamos en el desarrollo ágil y personalizado de soluciones
+            web adaptadas a las necesidades únicas de nuestros clientes.
           </p>
         </div>
       </div>
       <div className={styles.containTitlePrincipal}>
-        <h3 className={styles.titlePrincipal}>
-          InDev.co-Posicionamiento
-        </h3>
+        <h3 className={styles.titlePrincipal}>InDev.co-Posicionamiento</h3>
         <p className={styles.subtitlePrincipal}>
           Presentamos a usted nuestra gama de servicios.
         </p>
@@ -146,9 +143,11 @@ const Page: FC = () => {
             <div className={styles.containDescriptionServices}>
               <p className={styles.description}>{item.description}</p>
             </div>
-            <div className={styles.containBtnVewServices}>
-              <button className={styles.btnServices}>Ver Servicios</button>
-            </div>
+            <Link href="/functionality">
+              <div className={styles.containBtnVewServices}>
+                <button className={styles.btnServices}>Ver Servicios</button>
+              </div>
+            </Link>
           </div>
         ))}
       </div>
@@ -172,10 +171,11 @@ const Page: FC = () => {
             negocio aumentando el compromiso del cliente desde todos sus canales
             de venta.
           </p>
-
-          <div className={styles.containBtnContact}>
-            <button className={styles.btnContact}>Contáctanos</button>
-          </div>
+          <Link href="/contact">
+            <div className={styles.containBtnContact}>
+              <button className={styles.btnContact}>Contáctanos</button>
+            </div>
+          </Link>
         </div>
         <div className={styles.containImgReservs}>
           <Image className={styles.imgReservs} src={reservs} alt="Software" />
@@ -361,12 +361,14 @@ const Page: FC = () => {
           </span>
         </h3>
         <p className={styles.descriptionFinishContac}>
-          Contacta a nuestros expertos y descubre cómo InDev.co puede
-          optimizar la eficiencia de tu sitio web empresarial.
+          Contacta a nuestros expertos y descubre cómo InDev.co puede optimizar
+          la eficiencia de tu sitio web empresarial.
         </p>
-        <div className={styles.containBtnContact}>
-          <button className={styles.btnContact}>Contáctanos</button>
-        </div>{" "}
+        <Link href="/contact">
+          <div className={styles.containBtnContact}>
+            <button className={styles.btnContact}>Contáctanos</button>
+          </div>
+        </Link>
       </div>
       <Footer />
     </div>

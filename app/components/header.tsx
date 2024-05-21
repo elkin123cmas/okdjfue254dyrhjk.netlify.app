@@ -58,7 +58,7 @@ const Header: FC = () => {
 
   return (
     <div className={styles.containHeader}>
-      <div  className={styles.containInternHeaderFlex}>
+      <div className={styles.containInternHeaderFlex}>
         <div className={styles.ensayo}>
           <div className={styles.containLogo}>
             <h2 className={styles.logoIntern}>Logo</h2>
@@ -85,17 +85,19 @@ const Header: FC = () => {
               {" "}
               <li>Empresas</li>
             </Link>
-              <Link className={
+            <Link
+              className={
                 styles.listIntern
                 // (window.location.pathname === "/dashboard"
                 //   ? ` ${styles.listInternUnderline}`
                 //   : "")
               }
-              href="/functionality">
-              <li  >
-              {" "}
-              Funciones
-              {/* {isSublist && (
+              href="/functionality"
+            >
+              <li>
+                {" "}
+                Funciones
+                {/* {isSublist && (
                 <div className={`${styles.containIndustries} ${isSublist ? styles.show : ""}`}>
                   <ul className={styles.containSubList}>
                     <li className={styles.subListIntern}>Belleza & Bienestar</li>
@@ -104,9 +106,9 @@ const Header: FC = () => {
                   </ul>
                 </div>
               )} */}
-            </li>
-              </Link>
-           
+              </li>
+            </Link>
+
             <Link
               className={
                 styles.listIntern
@@ -119,14 +121,23 @@ const Header: FC = () => {
               {" "}
               <li>Precio</li>
             </Link>
-
-            <li className={styles.listIntern}>Contacto</li>
+            <Link
+              className={
+                styles.listIntern
+                // (window.location.pathname === "/dashboard"
+                //   ? ` ${styles.listInternUnderline}`
+                //   : "")
+              }
+              href="/contact"
+            >
+              <li>Contacto</li>
+            </Link>
           </div>
         </div>
-
-        <button className={styles.btnContactIntern}>Contactáctanos</button>
+        <Link href="/contact">
+          <button className={styles.btnContactIntern}>Contactáctanos</button>
+        </Link>
       </div>
-     
     </div>
   );
 };
