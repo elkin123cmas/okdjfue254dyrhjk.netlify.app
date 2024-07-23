@@ -109,7 +109,7 @@ const Page: FC = () => {
         <div className={styles.containTextOur5Enterprises}>
           <h3 className={styles.textTitle}>Nuestra Empresa</h3>
           <p id="revealText" className={styles.textInterEnterprises}>
-            En InDev.co, estamos dedicados a la creación de aplicativos web
+            En Q-Booker.io, estamos dedicados a la creación de aplicativos web
             innovadores que impulsan el éxito y la transformación digital. Nos
             especializamos en el desarrollo ágil y personalizado de soluciones
             web adaptadas a las necesidades únicas de nuestros clientes.
@@ -117,7 +117,7 @@ const Page: FC = () => {
         </div>
       </div>
       <div className={styles.containTitlePrincipal}>
-        <h3 className={styles.titlePrincipal}>InDev.co-Posicionamiento</h3>
+        <h3 className={styles.titlePrincipal}>Q-Booker.io-Posicionamiento</h3>
         <p className={styles.subtitlePrincipal}>
           Presentamos a usted nuestra gama de servicios.
         </p>
@@ -126,9 +126,8 @@ const Page: FC = () => {
         {Mockup.map((item, key) => (
           <div
             key={key}
-            className={`${styles.servicesIntern} ${
-              isScrollServices ? styles.visible : ""
-            }`}
+            className={`${styles.servicesIntern} ${isScrollServices ? styles.visible : ""
+              }`}
           >
             <div className={styles.containImgServices}>
               <Image
@@ -185,7 +184,7 @@ const Page: FC = () => {
 
       <div className={styles.titleOfferContain}>
         <h3 className={styles.titleOffer}>
-          Qué ofrece InDev.co a las <span>empresas</span>
+          Qué ofrece Q-Booker.io a las <span>empresas</span>
         </h3>
       </div>
       <OfferEnterprises />
@@ -361,7 +360,7 @@ const Page: FC = () => {
           </span>
         </h3>
         <p className={styles.descriptionFinishContac}>
-          Contacta a nuestros expertos y descubre cómo InDev.co puede optimizar
+          Contacta a nuestros expertos y descubre cómo Q-Booker.io puede optimizar
           la eficiencia de tu sitio web empresarial.
         </p>
         <Link href="/contact">

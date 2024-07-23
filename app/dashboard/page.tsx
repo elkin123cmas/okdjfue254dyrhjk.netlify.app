@@ -23,7 +23,7 @@ const Precio: FC = () => {
           </button>
         </div>
       </div>
-      <h3 className={styles.titleOfferFree}>InDev.co Citas</h3>
+      <h3 className={styles.titleOfferFree}>Q-Booker.io Citas</h3>
 
       {/* ********SECTION GRID********* */}
       <div className={styles.containInfoGrid}>
@@ -37,7 +37,7 @@ const Precio: FC = () => {
           </div>
           <div className={styles.containListPricesDescription}>
             <ul className={styles.containListPrices}>
-              <li className={styles.listPrices}>2 Plugins</li>
+              {/* <li className={styles.listPrices}>2 Plugins</li> */}
               <li className={styles.listPrices}>1 acceso del personal</li>
               <li className={styles.listPrices}>50 reservas/mes</li>
             </ul>
@@ -53,10 +53,10 @@ const Precio: FC = () => {
           </div>
           <div className={styles.containListPricesDescription}>
             <ul className={styles.containListPrices}>
-              <li className={styles.listPrices}>5 Plugins</li>
+              {/* <li className={styles.listPrices}>5 Plugins</li> */}
               <li className={styles.listPrices}>1 Landing Page</li>
 
-              <li className={styles.listPrices}>3 accesos del personal</li>
+              <li className={styles.listPrices}>2 accesos del personal</li>
               <li className={styles.listPrices}>100 reservas/mes</li>
             </ul>
           </div>
@@ -71,9 +71,9 @@ const Precio: FC = () => {
           </div>
           <div className={styles.containListPricesDescription}>
             <ul className={styles.containListPrices}>
-              <li className={styles.listPrices}>10 Plugins</li>
+              {/* <li className={styles.listPrices}>10 Plugins</li> */}
               <li className={styles.listPrices}>1 Página web</li>
-              <li className={styles.listPrices}>6 accesos del personal</li>
+              <li className={styles.listPrices}>4 accesos del personal</li>
 
               <li className={styles.listPrices}>2.000 reservas/mes</li>
             </ul>

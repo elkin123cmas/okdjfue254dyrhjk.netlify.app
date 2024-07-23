@@ -31,7 +31,7 @@ const Form: FC = () => {
               className={styles.iconControl}
               icon={faChartColumn}
             />
-            <h3 className={styles.titleRightContactIcon}>support@InDev.co</h3>
+            <h3 className={styles.titleRightContactIcon}>support@Q-Booker.io</h3>
           </div>
           <div className={styles.contactInternLeft}>
             <FontAwesomeIcon
