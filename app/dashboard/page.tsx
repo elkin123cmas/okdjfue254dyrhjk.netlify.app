@@ -6,6 +6,9 @@ import Image from "next/image";
 import include from "../assets/imagenes/ImgInclude.jpg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSquareCheck } from "@fortawesome/free-solid-svg-icons";
+import Link from "next/link";
+
+
 
 const Precio: FC = () => {
   return (
@@ -18,9 +21,12 @@ const Precio: FC = () => {
           Prueba gratis durante 30 días. No se requiere tarjeta de crédito
         </p>
         <div className={styles.containBtnContact}>
-          <button className={styles.btnContact}>
-            prueba totalmente gratis
-          </button>
+          <Link href="/contact">
+            <button className={styles.btnContact}>
+              prueba totalmente gratis
+            </button>
+          </Link>
+
         </div>
       </div>
       <h3 className={styles.titleOfferFree}>Q-Booker.io Citas</h3>
@@ -38,6 +44,8 @@ const Precio: FC = () => {
           <div className={styles.containListPricesDescription}>
             <ul className={styles.containListPrices}>
               {/* <li className={styles.listPrices}>2 Plugins</li> */}
+              <li className={styles.listPrices}>1 Landing Page</li>
+
               <li className={styles.listPrices}>1 acceso del personal</li>
               <li className={styles.listPrices}>50 reservas/mes</li>
             </ul>
@@ -85,9 +93,12 @@ const Precio: FC = () => {
           ¿Requieres un plan más completo? ¿Tu empresa cuenta con múltiples
           filiales o franquicias?
         </h3>
-        <button className={styles.contactMoreOffer}>
-          contacta con nosotros
-        </button>
+        <Link href="/contact">
+          <button className={styles.contactMoreOffer}>
+            contacta con nosotros
+          </button>
+        </Link>
+
       </div>
 
       {/* **********SECTION INCLUDE********** */}

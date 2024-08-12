@@ -3,12 +3,7 @@ import styles from "../styles/components/formulario.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faChartColumn,
-  faChartGantt,
-  faLockOpen,
-  faMapLocationDot,
-  faTicket,
-  faGears,
-  faLocationDot,
+
 } from "@fortawesome/free-solid-svg-icons";
 
 const Form: FC = () => {
@@ -24,7 +19,7 @@ const Form: FC = () => {
               className={styles.iconControl}
               icon={faChartColumn}
             />
-            <h3 className={styles.titleRightContactIcon}>+57 305 237 0000</h3>
+            <h3 className={styles.titleRightContactIcon}>+57 305 237 9574</h3>
           </div>
           <div className={styles.contactInternLeft}>
             <FontAwesomeIcon
@@ -44,27 +39,27 @@ const Form: FC = () => {
           </div>
         </div>
       </div>
-      <form action="" className={styles.formDiv}>
+      <form action="https://formsubmit.co/serviciotecnicoinfacont@gmail.com" method="POST" className={styles.formDiv}>
         <div className={styles.containInput}>
-          <input type="text" placeholder="Nombre y apellido" />
+          <input type="text" name="nombre" placeholder="Nombre y apellido" required />
           <FontAwesomeIcon className={styles.iconRight} icon={faChartColumn} />
         </div>
         <div className={styles.containInput}>
-          <input type="email" placeholder="Correo electrónico" />
+          <input type="email" name="email" placeholder="Correo electrónico" required />
           <FontAwesomeIcon className={styles.iconRight} icon={faChartColumn} />
         </div>
         <div className={styles.containInput}>
-          <input type="text" placeholder="Asunto" />
+          <input type="text" name="asunto" placeholder="Asunto" required />
           <FontAwesomeIcon className={styles.iconRight} icon={faChartColumn} />
         </div>
         <div className={styles.containTextArea}>
-          <textarea
-            className={styles.areaText}
-            placeholder="Escribe tu mensaje..."
-          />
+          <textarea className={styles.areaText} name="mensaje" placeholder="Escribe tu mensaje..." required></textarea>
         </div>
-        <button className={styles.send}>Enviar mensaje</button>
+
+        <input type="hidden" name="_formulario" value="Formulario de contacto de servicio técnico" />
+        <button type="submit" className={styles.send}>Enviar mensaje</button>
       </form>
+
     </div>
   );
 };

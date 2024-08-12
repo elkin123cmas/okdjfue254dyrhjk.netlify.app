@@ -11,6 +11,7 @@
   z-index: -1;
   /* background-color: yellow; */
 }
+
 .containInternLeft {
   display: flex;
   flex-direction: column;
@@ -21,30 +22,36 @@
   z-index: 99999;
   /* background-color: yellowgreen; */
 }
+
 .containContactIntern {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   gap: 2.5rem;
 }
+
 .contactInternLeft {
   display: flex;
   flex-direction: row;
   gap: 1rem;
 }
+
 .titleIntern {
   font-size: 3rem;
   margin-bottom: 3rem;
   color: #def0ff;
   text-transform: uppercase;
 }
+
 .iconControl {
   color: #007ed4;
 }
+
 .titleRightContactIcon {
   font-size: 1.5rem;
   color: #afb0b0;
 }
+
 .formDiv {
   display: flex;
   flex-direction: column;
@@ -55,11 +62,13 @@
   height: 100%;
   /* background-color: violet; */
 }
+
 .containInput {
   position: relative;
   width: 60%;
   height: 3rem;
 }
+
 .containInput input {
   position: absolute;
   width: 100%;
@@ -68,16 +77,20 @@
   padding-left: 2rem;
   outline: none;
   caret-color: #0874b2;
+  color: white;
   background-color: #80808030;
   backdrop-filter: blur(1rem);
 }
+
 .containInput input:focus {
   border-bottom: 2px solid #0874b2;
 }
+
 .containTextArea {
   width: 60%;
   min-height: 8rem;
 }
+
 .iconRight {
   display: flex;
   justify-content: center;
@@ -101,9 +114,11 @@
   backdrop-filter: blur(1rem);
   caret-color: #0874b2;
 }
+
 .areaText:focus {
   border-bottom: 2px solid #0874b2;
 }
+
 .send {
   display: inline-block;
   width: 60%;
@@ -114,11 +129,14 @@
   background-color: #007ed4;
   transition: all ease 0.4s;
 }
+
 .send:hover {
   background-color: #75d0ff;
   color: #064774;
   cursor: pointer;
 }
+
+
 
 @media screen and (max-width: 480px) {
   .containFormFlex {
@@ -134,6 +152,7 @@
     background-position: center;
     /* background-color: yellow; */
   }
+
   .containInternLeft {
     align-items: center;
     gap: 1rem;
@@ -141,17 +160,20 @@
     height: 60%;
     /* background-color: yellowgreen; */
   }
+
   .containContactIntern {
     justify-content: center;
     align-items: center;
     gap: 2rem;
     /* background-color: rgb(87, 13, 87); */
   }
+
   .contactInternLeft {
     display: flex;
     flex-direction: row;
     gap: 1rem;
   }
+
   .titleIntern {
     font-size: 2rem;
     text-align: center;
@@ -159,13 +181,16 @@
     color: #def0ff;
     text-transform: uppercase;
   }
+
   .iconControl {
     color: #007ed4;
   }
+
   .titleRightContactIcon {
     font-size: 1.5rem;
     color: #afb0b0;
   }
+
   .formDiv {
     display: flex;
     flex-direction: column;
@@ -176,17 +201,21 @@
     height: 70%;
     /* background-color: rgb(25, 2, 82); */
   }
+
   .containInput {
     position: relative;
     width: 85%;
     height: 3rem;
   }
+
   .containInput input {
-   color: #def0ff;
+    color: #def0ff;
   }
+
   .containTextArea {
     width: 85%;
   }
+
   .send {
     display: inline-block;
     width: 85%;

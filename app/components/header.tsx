@@ -61,7 +61,7 @@ const Header: FC = () => {
       <div className={styles.containInternHeaderFlex}>
         <div className={styles.ensayo}>
           <div className={styles.containLogo}>
-            <h2 className={styles.logoIntern}>Logo</h2>
+            <h2 className={styles.logoIntern}>Q-Booker</h2>
           </div>
           <div onClick={handelVisible} className={styles.containIconHamburg}>
             <FontAwesomeIcon className={styles.iconHamburg} icon={faBurger} />

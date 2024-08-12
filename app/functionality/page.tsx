@@ -40,7 +40,7 @@ const integration = {
 const programte = {
   title: "La programación de citas nunca antes fue tan sencilla",
   description:
-    " Di adiós a las interminables listas y a las complicadas hojas de cálculo. Con la avanzada programación de citas de Bookeo, mantente siempre organizado y actualizado en tiempo real, tanto tú como tus profesores.",
+    " Di adiós a las interminables listas y a las complicadas hojas de cálculo. Con la avanzada programación de citas de Q-Booker, mantente siempre organizado y actualizado en tiempo real, tanto tú como tus profesores.",
   img: celulares,
 };
 const commerce = {
@@ -52,7 +52,7 @@ const commerce = {
 const analitic = {
   title: "Obtén información con las estadísticas",
   description:
-    "Analiza tu negocio como todo un profesional con las estadísticas de Bookeo. Compara datos de las reservas y los ingresos para ver cómo va tu negocio y céntrate en lo que funciona mejor.",
+    "Analiza tu negocio como todo un profesional con las estadísticas de Q-Booker. Compara datos de las reservas y los ingresos para ver cómo va tu negocio y céntrate en lo que funciona mejor.",
   img: analitics,
 };
 const hosting = {
@@ -363,7 +363,7 @@ const Precio: FC = () => {
                 </h3>
                 <p className={styles.descriptionGridIntern}>
                   Ofrece a tus clientes una excelente experiencia de reserva de
-                  citas en tu sitio web. El widget de Bookeo se integra sin
+                  citas en tu sitio web. El widget de Q-Booker se integra sin
                   problemas en cualquier sitio HTML, incluidos WordPress.
                 </p>
               </div>
@@ -442,7 +442,7 @@ const Precio: FC = () => {
                 </h3>
                 <p className={styles.descriptionGridIntern}>
                   Acepta reservas de citas en línea desde tu página de Facebook
-                  con la aplicación de Facebook de Bookeo, sin coste adicional.
+                  con la aplicación de Facebook de Q-Booker, sin coste adicional.
                 </p>
               </div>
             </div>
@@ -525,7 +525,7 @@ const Precio: FC = () => {
                   Reserva y reprogramación de citas con un solo clic (para ti y
                   para tus clientes). Cálculo de precios en tiempo real,
                   reflejando promociones especiales, códigos y cupones
-                  promocionales. Bookeo lo controla todo por ti.
+                  promocionales. Q-Booker lo controla todo por ti.
                 </p>
               </div>
             </div>
@@ -810,7 +810,7 @@ const Precio: FC = () => {
                 </h3>
                 <p className={styles.descriptionGridIntern}>
                   Observa fácilmente el rendimiento actualizado de tu negocio
-                  con gráficos claros y concisos proporcionados por Bookeo.
+                  con gráficos claros y concisos proporcionados por Q-Booker.
                 </p>
               </div>
             </div>
@@ -829,7 +829,7 @@ const Precio: FC = () => {
                 <p className={styles.descriptionGridIntern}>
                   Descubre el origen de tus clientes y evalúa el impacto de tus
                   campañas de marketing gracias a la integración con Google
-                  Analytics/Adwords de Bookeo.
+                  Analytics/Adwords de Q-Booker.
                 </p>
               </div>
             </div>
@@ -908,7 +908,7 @@ const Precio: FC = () => {
                 </h3>
                 <p className={styles.descriptionGridIntern}>
                   Arquitectura avanzada: La arquitectura de hosting avanzada de
-                  Bookeo mantiene tu negocio funcionando a la perfección y de
+                  Q-Booker mantiene tu negocio funcionando a la perfección y de
                   forma continua. Resiliencia ante desastres: Incluso en el caso
                   de que se produzcan desastres naturales imprevistos, fallos de
                   hardware o problemas importantes en el centro de datos.
@@ -950,7 +950,7 @@ const Precio: FC = () => {
                 </h3>
                 <p className={styles.descriptionGridIntern}>
                   Cifrado SSL/TLS: Como parte de nuestro cumplimiento de la
-                  normativa PCI-DSS, todas las comunicaciones de Bookeo con
+                  normativa PCI-DSS, todas las comunicaciones de Q-Booker con
                   nuestros clientes comerciales se cifran utilizando el cifrado
                   SSL/TLS (128 o 256 bits). Nivel bancario de seguridad: Este es
                   el mismo nivel de cifrado utilizado por los bancos.
@@ -973,7 +973,7 @@ const Precio: FC = () => {
                 <p className={styles.descriptionGridIntern}>
                   Respuesta rápida: El tiempo de respuesta de tu página web es
                   más rápido cuando tu centro de datos se encuentra cerca.
-                  Centros de datos globales: Es por eso que Bookeo tiene
+                  Centros de datos globales: Es por eso que Q-Booker tiene
                   múltiples centros de datos en tres zonas geográficas
                   diferentes: Estados Unidos, Europa y Asia/Pacífico.
                 </p>
@@ -993,7 +993,7 @@ const Precio: FC = () => {
                 </h3>
                 <p className={styles.descriptionGridIntern}>
                   Réplica idéntica: Cada uno de nuestros servidores tiene 2
-                  réplicas idénticas. Cambio automático: Bookeo cambia
+                  réplicas idénticas. Cambio automático: Q-Booker cambia
                   automáticamente a un centro de datos diferente cuando es
                   necesario para garantizar que tu negocio sigue funcionando sin
                   interrupciones.
